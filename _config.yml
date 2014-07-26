@@ -1,28 +1,29 @@
-title:            Site Title
-description:      Describe your website here.
+title:            9ja 
+description:      My blog.
 logo:             site-logo.png
-disqus_shortname:
+disqus_shortname: aameer
 search:           true
 # Change url to your domain. Leave localhost server or blank when working locally.
 # You don't need to specify the protocol if you want it available on http and https. Example: //localhost:4000
-url:              http://localhost:4000
+url:              http://aameer.github.io
+domain_name:	  aameer.github.io
 
 # Owner/author information
 owner:
-  name:           Your Name
+  name:           Aaameer Rafiq Wani
   avatar:         bio-photo.jpg
-  email:          you@email.com
+  email:          aameer.rafiq@gmail.com
   # Social networking links used in footer. Update and remove as you like.
-  twitter:
-  facebook:
-  github:
-  stackexchange:
-  linkedin:
+  twitter:	
+  facebook:		https://www.facebook.com/public/Aameer-Rafiq-Wani	
+  github:		http://aameer.github.io/
+  stackexchange:	http://stackexchange.com/users/3375497/aameer
+  linkedin:		in.linkedin.com/in/aameerwani
   instagram:
   flickr:
   tumblr:
   # For Google Authorship https://plus.google.com/authorship
-  google_plus:
+  google_plus:		
 
 # Analytics and webmaster tools stuff goes here
 google_analytics:
@@ -44,7 +45,7 @@ links:
     external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
+timezone:    Asia/Kolkata
 future:      true
 pygments:    true
 #highlighter: pygments
