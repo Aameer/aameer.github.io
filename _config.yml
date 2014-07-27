@@ -38,8 +38,6 @@ links:
     url: /about/
   - title: Articles
     url: /articles/
-  - title: Theme Setup
-    url: /theme-setup/
     external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
