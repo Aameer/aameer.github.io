@@ -37,7 +37,8 @@ although there are many exceptions to this too some well funded startups will pa
 In startup you explore everthing even about your self.You learn enjoy success ask for help and accept failures.If you are not optimistic then you will become onne.How you approach problems will change
 
 8.output over outfit
-what you wear is not an issue, but productivity is very imporant.You have to contribute continously.As Enterpreneur David Bluhm notes “All start-up people need to be 'buisness builders' versus single contributors and view building the processes around their job as a primary role of the job itself”.
+what you wear is not an issue, but productivity is very imporant.You have to contribute continously.
+>As Enterpreneur David Bluhm notes “All start-up people need to be 'buisness builders' versus single contributors and view building the processes around their job as a primary role of the job itself”.
 
 9.Culture
 Big companies and firms want to have a startup culture.In most of the startup the culture is filled with fun, adventure, sometimes pranks and cutoms.In startups fitting into the startup's culture (which varies from company to company )is very important as you have very small teams .If you face any issues with the company culture it will cause issues at some stage.
