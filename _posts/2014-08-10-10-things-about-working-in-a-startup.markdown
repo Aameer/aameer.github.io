@@ -31,7 +31,7 @@ alhtough you may be workaholic or of competitve nature but that will not cut it.
 ### Less money
 Although many rich people are entreprneurs or have been at some point of time, it is not recommended to join a startup if you so thats why want earn huge amount of cash or you are comfortable with risks.
 
->In 2012 The Wall Street Journal reported that three out of four startups fail (75%){research conducted from 2004 to 2010 examning 2000 companies that had received at least $1 million in funding}
+>In 2012 The Wall Street Journal reported that three out of four startups fail (75%),research conducted from 2004 to 2010 examning 2000 companies that had received at least $1 million in funding.
 
 although there are many exceptions to this too some well funded startups will pay you well or provide you the option for shares or some other catchy benifits
 
