@@ -19,7 +19,6 @@ you will have all round develoopment of your skills not just on a technical fron
 
 3. Rapidly Adoption
 Startup is a game whose rules will change everyday rather (I may be exageratting now) every hour or minute, so one has to adapt to the changes very rapidly.So a starup environment is chaotic and volatile and you need to adapt rapidly.Every day is hard yet differernt from one another. Your job description and/or designation changes faster then you expect it to be.It is chaotic.
-
 > Steve blank, a professor at Stanford and founder of several companies asks those intrested in joining a startup "How comfortable are you with chaos?".
 
 4. Lots of work
@@ -38,7 +37,6 @@ In startup you explore everthing even about your self.You learn enjoy success as
 
 8. Output over Outfit
 what you wear is not an issue, but productivity is very imporant.You have to contribute continously.
-
 >As Enterpreneur David Bluhm notes “All start-up people need to be 'buisness builders' versus single contributors and view building the processes around their job as a primary role of the job itself”.
 
 9. Culture
