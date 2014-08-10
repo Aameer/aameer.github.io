@@ -18,7 +18,7 @@ if thats the cake you love then you are at the right bakery shop.You will always
 you will have all round develoopment of your skills not just on a technical front ,but on buisness and personal aswell.You learn how buisness  work and your network with and future collaborators most of them are intellegently crazy people( you have to be crazy to start a startup at the first place). As you will work closely with an entrepreneuer you will learn how to build a company and/or product, for someone who wants to start one of his/her own it can be of great importance as entrepreneurship is not taught but it is learned. You will be forced to try new things.
 
 3.Rapidly Adoption:
-Startup is a game whose rules will change everyday rather (I may be exageratting now) every hour or minute, so one has to adapt to the changes very rapidly.So a starup environment is chaotic and volatile and you need to adapt rapidly.Every day is hard yet differernt from one another. Your job description and/or designation changes faster then you expect it to be.It is chaotic
+Startup is a game whose rules will change everyday rather (I may be exageratting now) every hour or minute, so one has to adapt to the changes very rapidly.So a starup environment is chaotic and volatile and you need to adapt rapidly.Every day is hard yet differernt from one another. Your job description and/or designation changes faster then you expect it to be.It is chaotic.
 
 > Steve blank, a professor at Stanford and founder of several companies asks those intrested in joining a startup "How comfortable are you with chaos?".
 
