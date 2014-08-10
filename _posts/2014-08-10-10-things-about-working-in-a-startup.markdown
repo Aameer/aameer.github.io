@@ -19,6 +19,7 @@ you will have all round develoopment of your skills not just on a technical fron
 
 * Rapidly Adoption
 Startup is a game whose rules will change everyday rather (I may be exageratting now) every hour or minute, so one has to adapt to the changes very rapidly.So a starup environment is chaotic and volatile and you need to adapt rapidly.Every day is hard yet differernt from one another. Your job description and/or designation changes faster then you expect it to be.It is chaotic.
+
 > Steve blank, a professor at Stanford and founder of several companies asks those intrested in joining a startup "How comfortable are you with chaos?".
 
 * Lots of work
@@ -28,7 +29,10 @@ There is lot of work which you have to complete within a specified amount of tim
 alhtough you may be workaholic or of competitve nature but that will not cut it.You got to have Passion for the thing which you are doing so thats why you have to be very selective about what you want to do and when you want to do.they say that “No company is for everyone“.If you are not passionate about what you do then you are wasting your time and life is too short to do that.
 
 * Less money
-Although many rich people are entreprneurs or have been at some point of time, it is not recommended to join a startup if you so thats why want earn huge amount of cash or you are comfortable with risks.In 2012 <abbr title="The Wall Street Journal">WSJ<abbr>reported that three out of four startups fail (75%){research conducted from 2004 to 2010 examning 2000 companies that had received at least $1 million in funding}
+Although many rich people are entreprneurs or have been at some point of time, it is not recommended to join a startup if you so thats why want earn huge amount of cash or you are comfortable with risks.
+
+>In 2012 The Wall Street Journal reported that three out of four startups fail (75%){research conducted from 2004 to 2010 examning 2000 companies that had received at least $1 million in funding}
+
 although there are many exceptions to this too some well funded startups will pay you well or provide you the option for shares or some other catchy benifits
 
 * Know your-self
@@ -36,6 +40,7 @@ In startup you explore everthing even about your self.You learn enjoy success as
 
 * Output over Outfit
 what you wear is not an issue, but productivity is very imporant.You have to contribute continously.
+
 >As Enterpreneur David Bluhm notes “All start-up people need to be 'buisness builders' versus single contributors and view building the processes around their job as a primary role of the job itself”.
 
 * Culture
