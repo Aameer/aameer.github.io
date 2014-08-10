@@ -38,6 +38,7 @@ In startup you explore everthing even about your self.You learn enjoy success as
 
 8.output over outfit
 what you wear is not an issue, but productivity is very imporant.You have to contribute continously.
+
 >As Enterpreneur David Bluhm notes “All start-up people need to be 'buisness builders' versus single contributors and view building the processes around their job as a primary role of the job itself”.
 
 9.Culture
