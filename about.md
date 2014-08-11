@@ -2,8 +2,8 @@
 layout: page
 permalink: /about/
 title: About Me
-tags: [Aameer, Computer Science, Engineering, Augmented Reality]
-modified: 2014-08-11
+tags: [Aameer, computer science, engineering, augmented reality]
+modified: 2014-07-28
 image:
   feature: so-simple-sample-image-4.jpg
   credit: Michael Rose
