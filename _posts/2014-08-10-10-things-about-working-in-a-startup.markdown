@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "10 Things About Working in a Startup"
-description: "Some observations about startups"
+title: "10 Things in a Startup"
+description: "10 observations about startups"
 category: articles
 tags: [Startups, Entrepreneurship]
 comments: true
@@ -9,10 +9,10 @@ share: true
 date: 2014-08-10T18:53:26+05:30
 ---
 
-It has been almost  a year since I joined a tech startup in Hyderabad, India.Startup for different people may mean different things, for some it means *living a dream* and for some *living in a dream*. For most of the people associated with a startup (incliuding myself) Lean Startup is the best introduction of this amazing world, but I will not be discussing Lean methedology in this post.I wouldi highly recommend **lean startup by Eric ries** if you havent read it yet .The things I will be sharing here are my own observations and my personal understanding of some of the imporatant aspects of a startup.
+It has been almost  a year since I joined a tech startup in Hyderabad, India.Startup for different people may mean different things, for some it means **living a dream** and for some **living in a dream**. For most of the people associated with a startup (incliuding myself) Lean Startup is the best introduction of this amazing world, but I will not be discussing Lean methedology in this post.I wouldi highly recommend **lean startup by Eric ries** if you havent read it yet .The things I will be sharing here are my own observations and my personal understanding of some of the imporatant aspects of a startup.
 
 ### Learning
-In a startup, you will always have an opportunity to learn new things.Most of which are on the technological front, many tech starups nowadays rely on open source technologies, many of them have a research aspect associated with their work.In a startup, you will not only gain many technical skills in a short span of time but more importantly you will know *how to learn, what to learn and more imporantly what not to learn*.
+In a startup, you will always have an opportunity to learn new things.Most of which are on the technological front, many tech starups nowadays rely on open source technologies, many of them have a research aspect associated with their work.In a startup, you will not only gain many technical skills in a short span of time but more importantly you will know **how to learn, what to learn and more imporantly what not to learn**.
 
 ### Enterpreneurship
 In a startup You will learn how buisness  works and you will network with future collaborators most of them are intellegently crazy people( you have to be crazy to start a startup at the first place). As you will work closely with an entrepreneuer you will learn how to build a company and/or product, for someone who wants to start one of his/her own it can be of great importance as entrepreneurship is not taught but it can learned. You will be forced to try new things.
@@ -26,7 +26,7 @@ In a startup things change instantly.Startup is a game whose rules will change e
 In a startup there is lot of work which you have to complete within a specified amount.Occasilnally there will be some stress but at the same time if you love what you do and are proud of it then it shouldn't be an issue, although you will be pushed to your limits many times.
 
 ### Passion
-In a startup one needs passion.Alhtough you may be workaholic or of high competitve nature but that will not cut it.You need to have Passion for the thing which you are doing, so that's why you have to be very selective about what you want to work on.They say that *No company is for everyone*.If you are not passionate about what you do then you are wasting your time and life is too short to do that.
+In a startup one needs passion.Alhtough you may be workaholic or of high competitve nature but that will not cut it.You need to have Passion for the thing which you are doing, so that's why you have to be very selective about what you want to work on.They say that **No company is for everyone**.If you are not passionate about what you do then you are wasting your time and life is too short to do that.
 
 ### Less money
 In a startup you won't find gold mine.Although many rich people are entreprneurs or have been at some point of time, it is not recommended to join a startup if you want to earn huge amount of cash in short span of time (exceptions are always there).
@@ -45,6 +45,6 @@ In a startup what you wear is not an issue, but productivity is very imporant.Yo
 In a startup, culture is filled with fun, adventure, sometimes pranks and cutoms.Fitting into the startup's culture (which varies from company to company) is very important as you have very small teams to work with.
 
 ### Risk
-In a startup you get comfortable with risks.Startups involve risk, learing about risk , taking risks, encouraging risks *it is a messy mission that could fail or change the world*.So it helps a great deal if one had goodwill and deep relationship with his/her company.It is not bad to have that emotional ownership associated with your company as that will encourage you to work hard.
+In a startup you get comfortable with risks.Startups involve risk, learing about risk , taking risks, encouraging risks **it is a messy mission that could fail or change the world**.So it helps a great deal if one had goodwill and deep relationship with his/her company.It is not bad to have that emotional ownership associated with your company as that will encourage you to work hard.
 
 At last I would say working in a startup can be more than a job it can be a life changing experience.I would love to hear from you if you have any comments of suggestions.
