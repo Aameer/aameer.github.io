@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "10 Things in a Startup"
+title: "In a Startup"
 description: "10 observations about startups"
 category: articles
 tags: [Startups, Entrepreneurship]
