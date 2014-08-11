@@ -14,4 +14,4 @@ May peace and mercy of Allmighty be on you.This is _Aameer_.I love _Augmented Re
 Thank god  you are not bored to death, so I hope you will keep testing your patience with me and keep on following my posts.Apart from computers I love travelling, eating, sports and making new friendsi, so do contact me if you feel so.
 
 # Reach me
-You can Reach me at aameer@gmail.com.
+You can Reach me at aameer[AT]gmail.com.
