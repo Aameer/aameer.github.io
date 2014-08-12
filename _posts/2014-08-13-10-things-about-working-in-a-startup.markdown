@@ -3,6 +3,7 @@ layout: post
 title: "In a Startup"
 description: "10 observations about startups"
 category: articles
+analytics: true
 tags: [Startups, Entrepreneurship]
 comments: true
 share: true
