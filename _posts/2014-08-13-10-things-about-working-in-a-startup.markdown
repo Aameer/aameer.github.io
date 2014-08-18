@@ -2,13 +2,13 @@
 layout: post
 title: "In a Startup"
 description: "10 observations about startups"
-modified: 2013-05-31
+modified: 2014-08-18
 category: articles
 analytics: true
 tags: [Startups, Entrepreneurship]
 comments: true
 share: true
-date: 2014-08-13T18:53:26+05:30
+date: 2014-08-18T18:53:26+05:30
 ---
 
 It has been almost  a year since I joined a tech startup.Startup for different people may mean different things, for some it means *living a dream* and for some *living in a dream*. For most of the people associated with a startup (including myself) Lean Startup is the best introduction of this amazing world, but I will not be discussing Lean methedology in this post.I would highly recommend *lean startup by Eric ries* if you haven't read it yet .The things I will be sharing here are my own observations and my personal understanding of some of the important aspects of a startup.
