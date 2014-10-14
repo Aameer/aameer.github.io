@@ -10,17 +10,14 @@ comments: true
 share: true
 date: 2014-10-13T20:33:36+05:30
 ---
+Recently I faced an issue which can be closely described as using AJAX inside sucess function of another AJAX which is iterated by a loop. If youare familiar with ajax then skip the next paragraph.
 
-
-
-Recently I faced an issus which can be closely described as Ajax inside an AJAX which is iterated by a loop.If you are familiar with ajax then skip the next paragraph.
-
-For those of you who are not familiar with ajax, let me try to briefly explain ajax. Ajax stands for Asynchonous Javascript. As it's name suggestes, it is used to send to and retrieve data from a server asynchronously (in the background) without interfering with the display and behavior ofthe existing page. See how to use ajax with jquery [here is the link for jquery docs](http://api.jquery.com/jquery.ajax/)
+For those of you who are not familiar with ajax, let me try to briefly explain AJAX. AJAX stands for Asynchonous Javascript. As it's name suggestes, it is used to send to and retrieve data from a server asynchronously (in the background) without interfering with the display and behavior ofthe existing page. See how to use ajax with jquery [here is the link for jquery docs](http://api.jquery.com/jquery.ajax/).
 
 I was runnig a javascript which called a function(element-class-clicked) in loop for all the elements present on DOM.
 
 Also a refrence has to be passed to this function. As the code demands to call two ajax calls one after the other was done, so with the help of call backs we did that.The ajaxOptsAjaxFirst call was internally calling the ajaxOptsAjaxSecond and all of this was done inside namespaces. Code with issues:
-{% highlight javasript %}
+{% highlight javasript linenos %}
 var NAMESPACE ={
 
 	SubpartNamespace : {  
@@ -119,7 +116,7 @@ for that paticular response
 I tried to use many solutions and hacks, like setimeout , many other solutions from stackoverflow and diferent blogs but none of them seemed
 worked for our problem Then I solved it with by having simple abstraction for the ajaxOptsAjaxFirst the solution is mentioned below:
 
-{% highlight javascript %}
+{% highlight javascript linenos %}
 var NAMESPACE ={
 	SubpartNamespace : {  
 
