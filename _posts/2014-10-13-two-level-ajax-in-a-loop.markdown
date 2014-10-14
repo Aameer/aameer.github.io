@@ -10,9 +10,9 @@ comments: true
 share: true
 date: 2014-10-13T20:33:36+05:30
 ---
-Recently I faced an issue which can be closely described as using *(AJAX)* inside sucess function of another *(AJAX)* which is iterated by a loop. If you are familiar with ajax then skip the next paragraph.
+Recently I faced an issue which can be closely described as using *AJAX* inside sucess function of another *AJAX* which is iterated by a loop. If you are familiar with ajax then skip the next paragraph.
 
-For those of you who are not familiar with ajax, let me try to briefly explain *(AJAX)*. *(AJAX)* stands for Asynchonous Javascript. As it's name suggests, it is used to send to and retrieve data from a server asynchronously (in the background) without interfering with the display and behavior of the existing page. See how to use ajax with jquery [here](http://api.jquery.com/jquery.ajax/).
+For those of you who are not familiar with ajax, let me try to briefly explain *AJAX*. *AJAX* stands for Asynchonous Javascript. As it's name suggests, it is used to send to and retrieve data from a server asynchronously (in the background) without interfering with the display and behavior of the existing page. See how to use ajax with jquery [here](http://api.jquery.com/jquery.ajax/).
 
 I was runnig a javascript which called a function `element_class_clicked` in loop for all the elements present on DOM (See code Below).
 
