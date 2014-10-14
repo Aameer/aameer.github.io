@@ -66,22 +66,20 @@ var NAMESPACE ={
        };
        jQuery.ajax(loginAjaxOpts);
     },
-   		
     some_fn : function(some_data){
-    	//some more code
-    	jQuery.ajax(ajaxOptsAjaxSecond);	
-    	//some more code
+      //some more code
+      jQuery.ajax(ajaxOptsAjaxSecond);	
+      //some more code
     },
-   
     toggle_fn : function(eventObj){
       eventObj.preventDefault();
       if (AUTH_STATUS) {
-          var this_item = this.parentElement.parentElement; 
-          if(jQuery(this).parent().siblings('canvas').is(':visible') == false){
-            NAMESPACE.SubpartNamespace.element_class_clicked(this_item);
-          }else{
-            NAMESPACE.SubpartNamespace.element_other_class_clicked(this_item);
-          };
+         var this_item = this.parentElement.parentElement; 
+         if(jQuery(this).parent().siblings('canvas').is(':visible') == false){
+           NAMESPACE.SubpartNamespace.element_class_clicked(this_item);
+         }else{
+           NAMESPACE.SubpartNamespace.element_other_class_clicked(this_item);
+         };
       } else {
          console.log("Please log in first");
       } 
@@ -94,13 +92,13 @@ window.onload= function() {
   $('.'+someClass+'').click(function(){ 
     a=$('.element_class');
     $.each(a,function(c){
-       if($(a[c]).parent().siblings('canvas').size()<=0){
-           $(a[c]).trigger('click');
-	   //trigger click in this case will aslo call element_class_clicked(this_item) with same args
-       }else{
-           var this_item = this.parentElement.parentElement;
-           NAMESPACE.SubpartNamespace.element_class_clicked(this_item);
-       }    
+      if($(a[c]).parent().siblings('canvas').size()<=0){
+         $(a[c]).trigger('click');
+         //trigger click in this case will aslo call element_class_clicked(this_item) with same args
+      }else{
+        var this_item = this.parentElement.parentElement;
+        NAMESPACE.SubpartNamespace.element_class_clicked(this_item);
+      }    
     }); 
   });
 };
@@ -111,7 +109,7 @@ for ajaxOptsAjaxSecond, the code would proceed ahead and thus give wrong results
 for that paticular response
 
 I tried to use many solutions and hacks, like setimeout , many other solutions from stackoverflow and diferent blogs but none of them seemed
-worked for our problem Then I solved it with by having simple abstraction for the ajaxOptsAjaxFirst the solution is mentioned below:
+worked for our problem. Then I solved it with by having simple abstraction for the ajaxOptsAjaxFirst. Code is as under:
 
 {% highlight javascript linenos %}
 var NAMESPACE ={
@@ -152,33 +150,33 @@ var NAMESPACE ={
         crossDomain: true,
         xhrFields: {withCredentials: true},
         success: function(resp) {
-            //console.log(resp);
-            if (resp.status === "authenticated") {
-                //some code
-                jQuery.ajax(ajaxOptsAjaxFirst);
-            } else {
-                console.log("Please login first");
-            }
+          //console.log(resp);
+          if (resp.status === "authenticated") {
+              //some code
+              jQuery.ajax(ajaxOptsAjaxFirst);
+          } else {
+              console.log("Please login first");
+          }
         },
       };
       jQuery.ajax(loginAjaxOpts);
     },
     some_fn : function(some_data){
-    	//some more code
-    	NAMESPACE.SubpartNamespace.seperate_ajax_fn(canvas, form_vals);
-    	//some more code
+      //some more code
+      NAMESPACE.SubpartNamespace.seperate_ajax_fn(canvas, form_vals);
+      //some more code
     },
     toggle_fn : function(eventObj){
-       eventObj.preventDefault();
-       if (AUTH_STATUS) {
-           var this_item = this.parentElement.parentElement; 
-           if(jQuery(this).parent().siblings('canvas').is(':visible') == false){
-             NAMESPACE.SubpartNamespace.element_class_clicked(this_item);
-           }else{
-             NAMESPACE.SubpartNamespace.element_other_class_clicked(this_item);
-           };
-       } else {
-          console.log("Please log in first");
+      eventObj.preventDefault();
+      if (AUTH_STATUS) {
+        var this_item = this.parentElement.parentElement; 
+        if(jQuery(this).parent().siblings('canvas').is(':visible') == false){
+          NAMESPACE.SubpartNamespace.element_class_clicked(this_item);
+        }else{
+          NAMESPACE.SubpartNamespace.element_other_class_clicked(this_item);
+        };
+      } else {
+        console.log("Please log in first");
       } 
     },
   },
