@@ -19,7 +19,8 @@ For those of you who are not familiar with ajax, let me try to briefly explain a
 
 I was runnig a javascript which called a function(element-class-clicked) in loop for all the elements present on Dom.Also a refrence has to be passed to this function. As the code demands to call two ajax calls one after the other was done, so with the help of call backs we did that.The ajaxOptsAjaxFirst call was internally calling the ajaxOptsAjaxSecond and all of this was done inside namespaces. Code with issues:
 
-`var NAMESPACE ={
+`
+var NAMESPACE ={
 	SubpartNamespace : {  
 
 	  	element_class_clicked : function(clicked_element){
@@ -92,7 +93,6 @@ I was runnig a javascript which called a function(element-class-clicked) in loop
 		
 	},
 };
-
 window.onload= function() {
 	$('.element_class').on('click', NAMESPACE.SubpartNamespace.toggle_fn);   
 
@@ -107,7 +107,8 @@ window.onload= function() {
 	        }    
 	     }); 
     });
-};`
+};
+`
 Here the problem was that sometimes on slower servers or clients on slower networks before we have recieved the response 
 for ajaxOptsAjaxSecond, the code would proceed ahead and thus give wrong results as it would was loose the context for clicked-element 
 for that paticular response
@@ -115,7 +116,8 @@ for that paticular response
 I tried to use many solutions and hacks, like setimeout , many other solutions from stackoverflow and diferent blogs but none of them seemed
 worked for our problem Then I solved it with by having simple abstraction for the ajaxOptsAjaxFirst the solution is mentioned below:
 
-`var NAMESPACE ={
+`
+var NAMESPACE ={
 	SubpartNamespace : {  
 
 		seperate_ajax_fn: function(canvas, form_vals){
@@ -191,7 +193,8 @@ worked for our problem Then I solved it with by having simple abstraction for th
 		},
 		
 	},
-};`
+};
+`
 What it does is actually creates stack for the seperate-ajax-fn and thus saves the context for arguments.Thus this solution will
 even work for slower networks as it will wait for the response for (ajax link1).The most important thing here is that we eliminated the
 use settimeouts.Moreoever with just restucturing of code in Namespace we got the desiered results
