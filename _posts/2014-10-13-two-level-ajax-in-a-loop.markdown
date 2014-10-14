@@ -25,7 +25,7 @@ var NAMESPACE ={
        var form_vals = NAMESPACE.SubpartNamespace.get_apparel_details(jQuery(clicked_element).children('.class1'));
        ajaxOptsAjaxSecond = {
        	xhrFields: {withCredentials: true},
-       	url: "http://"+dressy_server+"/link1/",
+       	url: "http://"+server_name+"/link1/",
        	dataType: 'json',
        	crossDomain: true,
        	data: form_vals,
@@ -35,7 +35,7 @@ var NAMESPACE ={
        	},
        };
        var ajaxOptsAjaxFirst =  {
-       	url: "http://"+dressy_server+"/link2/",
+       	url: "http://"+server_name+"/link2/",
        	dataType: 'json',
        	crossDomain: true,
        	data: form_vals,
@@ -88,7 +88,7 @@ var NAMESPACE ={
 };
 
 window.onload= function() {
-  $('.element\_class').on('click', NAMESPACE.SubpartNamespace.toggle\_fn);   
+  $('.element_class').on('click', NAMESPACE.SubpartNamespace.toggle_fn);   
   $('.'+someClass+'').click(function(){ 
     a=$('.element_class');
     $.each(a,function(c){
@@ -114,7 +114,7 @@ var NAMESPACE ={
     seperate_ajax_fn: function(canvas, form_vals){
       ajaxOptsAjaxSecond = {
         xhrFields: {withCredentials: true},
-        url: "http://"+dressy_server+"/link1/",
+        url: "http://"+server_name+"/link1/",
         dataType: 'json',
         crossDomain: true,
         data: form_vals,
@@ -128,7 +128,7 @@ var NAMESPACE ={
     element_class_clicked : function(clicked_element){
       var form_vals = NAMESPACE.SubpartNamespace.get_apparel_details(jQuery(clicked_element).children('.class1'));
       var ajaxOptsAjaxFirst =  {
-        url: "http://"+dressy_server+"/link2/",
+        url: "http://"+server_name+"/link2/",
         dataType: 'json',
         crossDomain: true,
         data: form_vals,
