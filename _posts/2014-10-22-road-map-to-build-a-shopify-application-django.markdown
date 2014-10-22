@@ -10,11 +10,9 @@ comments: true
 share: true
 date: 2014-10-22T19:06:33+05:30
 ---
-* Set a shopify account.
+* Set a shopify account.shopify account page and dashborad looks like this.
  
 ![Set a shopify account page](/images/shopify2e.png)
-
-shopify dashborad looks like this.
 
 ![Shopify dash board](/images/shopify1e.png)
 
