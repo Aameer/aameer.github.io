@@ -10,13 +10,15 @@ comments: true
 share: true
 date: 2014-10-22T19:06:33+05:30
 ---
-* Set a shopify account 
+* Set a shopify account. 
 ![Set a shopify account page](/images/shopify2e.png)
-shopify dashborad looks like this: 
+
+shopify dashborad looks like this.
 ![Shopify dash board](/images/shopify1e.png)
+
 * Set up a shopify shop with some products [here](www.shopify.com).
 
-* Now get a shopify partners account [here](http://www.shopify.in/partners) if you don't have one, then login [here](https://app.shopify.com/services/partners/auth/login) after you have created one.Partners account dashboard looks like this:
+* Now get a shopify partners account [here](http://www.shopify.in/partners) if you don't have one, then login [here](https://app.shopify.com/services/partners/auth/login) after you have created one.Partners account dashboard looks like this.
 ![Shopify partners dash borad](/images/shopify3e.png)
 
 * Register an app, get shopify api key and shopify api secret.
