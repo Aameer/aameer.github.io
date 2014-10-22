@@ -10,10 +10,6 @@ comments: true
 share: true
 date: 2014-10-22T19:06:33+05:30
 ---
-Recently I faced an issue which can be closely described as using *AJAX* `ajaxOptsAjaxFirst` inside sucess function of another *AJAX* `ajaxOptsAjaxSecond` which is iterated by a loop. If you are familiar with ajax then skip the next paragraph.
-
-For those of you who are not familiar with ajax, let me try to briefly explain *AJAX*. *AJAX* stands for Asynchonous Javascript. As it's name suggests, it is used to send to and retrieve data from a server asynchronously (in the background) without interfering with the display and behavior of the existing page. See how to use ajax with jquery [here](http://api.jquery.com/jquery.ajax/).
-
 * Set up a shopify shop with some products
 
 * Now get a shopify partners account [here](http://www.shopify.in/partners) if you don't have one, then login [here] (https://app.shopify.com/services/partners/auth/login) after you have created one.
