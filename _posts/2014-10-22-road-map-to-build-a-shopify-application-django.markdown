@@ -12,7 +12,7 @@ date: 2014-10-22T19:06:33+05:30
 ---
 * Set up a shopify shop with some products
 
-* Now get a shopify partners account [here](http://www.shopify.in/partners) if you don't have one, then login [here] (https://app.shopify.com/services/partners/auth/login) after you have created one.
+* Now get a shopify partners account [here](http://www.shopify.in/partners) if you don't have one, then login [here](https://app.shopify.com/services/partners/auth/login) after you have created one.
 
 * Register an app get shopify api key and shopify api secret.
 
@@ -47,7 +47,7 @@ request.session['shopify'] = {
 products = shopify.Product.find(status='any')
 {% endhighlight %}
 
-product has other properties too check [here] (http://docs.shopify.com/api/product).
+product has other properties too check [here](http://docs.shopify.com/api/product).
 
 * There is also a neat way to inetract with shopify api where you can test your snippets for instructions please read [this]( http://docs.shopify.com/api/introduction/using-the-api-console) article.
 
