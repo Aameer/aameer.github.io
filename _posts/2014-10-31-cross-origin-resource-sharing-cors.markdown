@@ -3,7 +3,7 @@ layout: post
 title: "Cross Origin Resource Sharing (CORS)"
 date: 2014-10-31T02:07:18+05:30
 ---
-[Same Origin Policy](http://en.wikipedia.org/wiki/Same-origin_policy) an imporatnt concept of web application security model but while biulding RESTful Api's you may need work arounds to tackle it, some are mentioned under:
+[Same Origin Policy](http://en.wikipedia.org/wiki/Same-origin_policy) is an imporatnt concept of web application security model but while biulding RESTful Api's you may need work some arounds to tackle it, some of them are mentioned as under:
 
 * Integration Middleware
 
@@ -12,10 +12,7 @@ date: 2014-10-31T02:07:18+05:30
 Here one server acts as proxy for other servers, issue with this approach is that there are more servers to maintain, and there is more latency.
 
 * jsonp
-[jsonp](http://en.wikipedia.org/wiki/JSONP) JavaScript Object Notation with padding. Take a pure json, make it function call then eval in the browser.Note same origin policy doesnt apply to resource loading(script tags), lets see an example 
-
-json:{'price':42}
-jsonp:callback({'price':42});
+[jsonp](http://en.wikipedia.org/wiki/JSONP) JavaScript Object Notation with padding. Take a pure json, make it function call then eval in the browser.Note same origin policy doesnt apply to resource loading(script tags), lets see an example `json:{'price':42}`, `jsonp:callback({'price':42});`
 
 {% highlight javascript linenos %}
 $.ajax({
@@ -32,10 +29,10 @@ $.ajax({
 });
 {% endhighlight %}
 
-what it does is create a script tag and making your browser "eval" the lot.Each time each request comes in.Some known security holes are there, any script you bring in has access to your data/dom/ private parts.Moreover Jsonp is GET only and for our usual RESTful Api's we need other http verbs too.
+what it does is create a script tag and making your browser "eval" the lot. Each time each request comes in.Some known security holes are there, any script you bring in has access to your data/dom/ private parts. Moreover Jsonp is GET only and for our usual RESTful Api's we need other http verbs too.
 
 * CORS(Cross Origin Resource Sharing)
-CORS allows servers to specify who, what can access endpoint directly.It uses plain json , and all http verbs: PUT,DELETE, etc are available
+CORS allows servers to specify who, what can access endpoint directly. It uses plain json , and all http verbs: PUT,DELETE, etc are available
 
 ![Diagram2](/images/cors2e.png)
 
@@ -53,12 +50,12 @@ $.ajax ({
 });
 {% endhighlight %}
 
-Most of the work happens between browser and server, using http headers called "pre flight checks".The browser passes origin header to server e.g
+Most of the work happens between browser and server, using http headers called *"pre flight checks"*.The browser passes origin header to server e.g
 `Origin:http://www.example-social-network.com`, server responds(header) saying what is allowed `Access-Control-Allow-Origin :http://www.example-social-network.com`
 
 ![Diagram4](/images/cors4e.png)
 
-"Pre flight checks" are performed by browser, opaque to client app.Browser enforces.you dont see them, browser Uses "OPTION" http verb.Can be anoyance if we use `Access-Control-Allow-Origin:*`. Downside of approach is that it allows any script with right credentials to pull data from you.
+*"Pre flight checks"* are performed by browser, opaque to client app.Browser enforces.you dont see them, browser Uses "OPTION" http verb.Can be anoyance if we use `Access-Control-Allow-Origin:*`. Downside of approach is that it allows any script with right credentials to pull data from you.
 
 * Common pattern:
 
@@ -72,6 +69,8 @@ All app server environments have a way to do the right thing with CORS headers: 
 etc.
 
 ![Diagram3](/images/cors3e.png)
+
+Note that authorization has to be handled by your app.
 
 * Other CORS headers
 
@@ -87,7 +86,7 @@ etc.
 `$ORIGIN = if (inWhitelist(requestOriginHeader))return requestOriginHeader`
 
 
-* My implemented Code (for nginx):
+* Implemented Server Side Code (for nginx):
 ----------------------------------
 
 {% highlight nginx linenos %}
@@ -109,6 +108,9 @@ location / {
 	...
 }
 {% endhighlight %}
+
+* Implemented Client Side Code (ajax)
+-------------------------------------
 
 {% highlight javascript linenos %}
 server_name = "mytestsever.com";
@@ -144,6 +146,6 @@ ajaxOpts = {
 jQuery.ajax(ajaxOpts);
 {% endhighlight %}
 
-For django one can use [django-cors-headers](https://github.com/ottoyiu/django-cors-headers) plugin and add the headers in the view which responds to the urls in the ajax calls.
+For django one can skip all this an simple use [django-cors-headers](https://github.com/ottoyiu/django-cors-headers) plugin or directly add the headers in the view which responds to the urls in the ajax calls.
 
 Learn more about CORS here: [wikipedia](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing), [html5rocks](http://www.html5rocks.com/en/tutorials/cors/), [enable-cors.org](enable-cors.org), [Michael Neale](http://www.youtube.com/watch?v=rlnhiwN8AnU). Thanks for Reading
