@@ -10,7 +10,7 @@ comments: true
 share: true
 date: 2014-10-31T02:07:18+05:30
 ---
-[Same Origin Policy](http://en.wikipedia.org/wiki/Same-origin_policy) is an imporatnt concept of web application security model but while biulding RESTful Api's you may need work some arounds to tackle it, some of them are mentioned as under:
+[Same Origin Policy](http://en.wikipedia.org/wiki/Same-origin_policy) is an imporatnt concept of web application security model but while biulding RESTful Api's you may need some work arounds to tackle it, some of them are mentioned as under:
 
 * Integration Middleware
 
