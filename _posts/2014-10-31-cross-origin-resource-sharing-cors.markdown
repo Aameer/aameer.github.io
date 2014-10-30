@@ -146,4 +146,4 @@ jQuery.ajax(ajaxOpts);
 
 For django one can use [django-cors-headers](https://github.com/ottoyiu/django-cors-headers) plugin and add the headers in the view which responds to the urls in the ajax calls.
 
-Learn more about CORS here: [wikipedia](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing), [html5rocks](http://www.html5rocks.com/en/tutorials/cors/), [enable-cors.org](enable-cors.org), [Michael Neale video](http://www.youtube.com/watch?v=rlnhiwN8AnU). Thanks for Reading
+Learn more about CORS here: [wikipedia](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing), [html5rocks](http://www.html5rocks.com/en/tutorials/cors/), [enable-cors.org](enable-cors.org), [Michael Neale](http://www.youtube.com/watch?v=rlnhiwN8AnU). Thanks for Reading
