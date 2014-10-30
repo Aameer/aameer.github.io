@@ -1,6 +1,13 @@
 ---
 layout: post
 title: "Cross Origin Resource Sharing (CORS)"
+description: "Wait for ajax response inside another ajax iterated by a loop"
+modified: 2014-10-31
+category: articles
+analytics: true
+tags: [CORS, same origin policy, cross origin ajax, jsonpi, cross origin resource sharing]
+comments: true
+share: true
 date: 2014-10-31T02:07:18+05:30
 ---
 [Same Origin Policy](http://en.wikipedia.org/wiki/Same-origin_policy) is an imporatnt concept of web application security model but while biulding RESTful Api's you may need work some arounds to tackle it, some of them are mentioned as under:
