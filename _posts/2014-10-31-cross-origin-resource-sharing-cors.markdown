@@ -12,9 +12,11 @@ date: 2014-10-31T02:07:18+05:30
 Here one server acts as proxy for other servers, issue with this approach is that there are more servers to maintain, and there is more latency.
 
 * jsonp
-[jsonp](http://en.wikipedia.org/wiki/JSONP) JavaScript Object Notation with padding. Take a pure json, make it function call then eval in the browser.Note same origin policy doesnt apply to resource loading(script tags), lets see an example
+[jsonp](http://en.wikipedia.org/wiki/JSONP) JavaScript Object Notation with padding. Take a pure json, make it function call then eval in the browser.Note same origin policy doesnt apply to resource loading(script tags), lets see an example 
+
 json:{'price':42}
 jsonp:callback({'price':42});
+
 {% highlight javascript linenos %}
 $.ajax({
 	...
@@ -41,8 +43,7 @@ It is trivial to consume, has plain web calls , and is direct although there is 
 All verbs, all data types
 
 
-Client Side Example
--------------------
+* Client Side Example
 
 {% highlight javascript linenos %}
 $.ajax ({
@@ -51,11 +52,11 @@ $.ajax ({
 	...
 });
 {% endhighlight %}
+
 Most of the work happens between browser and server, using http headers called "pre flight checks".The browser passes origin header to server e.g
 `Origin:http://www.example-social-network.com`, server responds(header) saying what is allowed `Access-Control-Allow-Origin :http://www.example-social-network.com`
 
-
-![Diagram23](/images/cors34e.png)
+![Diagram4](/images/cors4e.png)
 
 "Pre flight checks" are performed by browser, opaque to client app.Browser enforces.you dont see them, browser Uses "OPTION" http verb.Can be anoyance if we use `Access-Control-Allow-Origin:*`. Downside of approach is that it allows any script with right credentials to pull data from you.
 
@@ -70,38 +71,35 @@ The returned value is really echoing back what Origin was checked  off against a
 All app server environments have a way to do the right thing with CORS headers: rack-cors:ruby, Servlet-filter: java, Node :express middleware
 etc.
 
+![Diagram3](/images/cors3e.png)
 
 * Other CORS headers
+
 `Access-Control-Allow-Headers` (headers to be included in requests)
 `Access-Control-Allow-Methods:GET, PUT , POST , DELETE` etc
 `Access-Control-Allow-Credentials:boolean`
 
 * Minimal setup
+
 `Access-Control-Allow-Methods:GET,POST,PUT,DELETE`
 `Access-Control-Allow-Credentials:true`
 `Access-Control-Allow-Origin:$ORIGIN`
 `$ORIGIN = if (inWhitelist(requestOriginHeader))return requestOriginHeader`
 
 
-* My implemented Code:
----------------------
-for nginx 
+* My implemented Code (for nginx):
+----------------------------------
 
 {% highlight nginx linenos %}
 # pass requests for dynamic content to rails/turbogears/zope, et al
 location / {
 	 ...
-
 	 if ($http_origin ~* (https://abc.com|https://abc.com|http://xyz.com|http://somerandomsite.org|http://secondrandomsite.com|http://somedomain.com)) {
 	     set $cors "true";
 	 }
-
-
 	# Handle CORS
 	#set $cors "true";
-
 	# if it's a GET or POST, set the standard CORS responses header
-
 	if ($cors = "true") {
 	 add_header 'Access-Control-Allow-Origin' "$http_origin";
 	 add_header 'Access-Control-Allow-Methods' 'GET, POST, OPTIONS, DELETE, PUT';
@@ -109,12 +107,12 @@ location / {
 	 add_header 'Access-Control-Allow-Headers' 'User-Agent,Keep-Alive,Content-Type';
 	}
 	...
-
 }
 {% endhighlight %}
 
 {% highlight javascript linenos %}
-server_name = "mytestsever.com"
+server_name = "mytestsever.com";
+
 //GET
 ajaxOptsCrossOrigin = {
 	xhrFields: {withCredentials: true}, //adds cookies, credentials
@@ -146,7 +144,6 @@ ajaxOpts = {
 jQuery.ajax(ajaxOpts);
 {% endhighlight %}
 
-For django one can use [django-cors-headers](https://github.com/ottoyiu/django-cors-headers) plugin and add the headers in the view which responds to the urls in the ajax calls
+For django one can use [django-cors-headers](https://github.com/ottoyiu/django-cors-headers) plugin and add the headers in the view which responds to the urls in the ajax calls.
 
-Learn more about CORS here:[wikipedia](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing),[html5rocks](http://www.html5rocks.com/en/tutorials/cors/), [enable-cors.org](enable-cors.org).
-Thanks for Reading
+Learn more about CORS here: [wikipedia](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing), [html5rocks](http://www.html5rocks.com/en/tutorials/cors/), [enable-cors.org](enable-cors.org), [Michael Neale video](http://www.youtube.com/watch?v=rlnhiwN8AnU). Thanks for Reading
