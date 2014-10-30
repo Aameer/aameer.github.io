@@ -86,7 +86,7 @@ Note that authorization has to be handled by your app.
 `$ORIGIN = if (inWhitelist(requestOriginHeader))return requestOriginHeader`
 
 
-* Implemented Server Side Code (for nginx):
+* Implemented Server Side Code (nginx):
 ----------------------------------
 
 {% highlight nginx linenos %}
