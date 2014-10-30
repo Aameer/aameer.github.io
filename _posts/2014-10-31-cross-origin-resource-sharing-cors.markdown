@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Cross Origin Resource Sharing (CORS)"
-description: "Wait for ajax response inside another ajax iterated by a loop"
+description: "Implementing Cross Origin Resource Sharing"
 modified: 2014-10-31
 category: articles
 analytics: true
