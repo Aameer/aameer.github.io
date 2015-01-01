@@ -26,7 +26,7 @@ when the user inputs a location name or address we have to get the latitude and 
 ----------------
 
 Instagrams api works mostly like  other social networking api's. Here first we will register as instagrams developers and create and app to get app secret and client id (check picture below) and after that we can proceed forward to query api , but wait for the queries we need the user needs to be authenticated, luckily django-alluth(https://github.com/pennersr/django-allauth) comes to our rescue and saves us lot of time and effort.
-To get the users authenticated we just need to configure(I will write another post about django allauth configuration) the allauth and then we can get the access-token which we will use in our queries to get our result dump(json format) after getting the response from instagrams servers, we parse the result to get the url of the images and then display them on the front end.For codes check my github project [here](https://github.com/Aameer/instagramGTpics).
+To get the users authenticated we just need to configure(check [this](http://aameer.github.io/articles/django-allauth-integration-instagram-as-a-provider/) post about django allauth configuration) the allauth and then we can get the access-token which we will use in our queries to get our result dump(json format) after getting the response from instagrams servers, we parse the result to get the url of the images and then display them on the front end.For codes check my github project [here](https://github.com/Aameer/instagramGTpics).
 
 ![Diagram2](/images/instagram_api.png)
 
