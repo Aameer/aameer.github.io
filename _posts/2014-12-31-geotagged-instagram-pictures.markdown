@@ -8,8 +8,6 @@ analytics: true
 tags: [Instagram API, Google Maps API, Django, django-allauth, Geotagged-Pictures]
 comments: true
 share: true
-
-
 date: 2014-12-31T22:06:17+05:30
 ---
 
