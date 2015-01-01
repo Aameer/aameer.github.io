@@ -13,7 +13,7 @@ date: 2015-01-01T20:50:19+05:30
 
 [Django alluth](https://github.com/pennersr/django-allauth) is an Integrated set of Django applications addressing authentication, registration, account management as well as 3rd party (social) account authentication. There is great deal of documentation and examples available out there about integrating it with different providers but for instagram (although similar to others) there wasn't a detailed stepwise guide, so I thought a post could save someone some time.
 
-Most of what I have mentioned here is already present in the official docs [here](http://django-allauth.readthedocs.org/en/latest/installation.html), but it still may help someone to get the things up adn running quickly.
+Most of what I have mentioned here is already present in the official docs [here](http://django-allauth.readthedocs.org/en/latest/installation.html), but it still may help someone to get the things up and running quickly.
 
 Installation
 ------------
