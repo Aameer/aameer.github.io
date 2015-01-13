@@ -12,7 +12,7 @@ date: 2015-01-13T22:33:45+05:30
 ---
 
 ### The lean Startup
-I recently completed reading the book (lean startup by eric ries(http://en.wikipedia.org/wiki/Eric_Ries)). Many of my friends haven't read it so I thought that a post may persuade them to do so.I will try to present a crux of the book.Lets start with. What is lean startup?. According to eric ries "An organization designed to create new products and services under conditions of extreme uncertainty". Just like alibaba had to tackle 40 thieves to get the teasure enterpreneus on thier treasure hunt have to keep in mind these fourty points which are as under:
+I recently completed reading the book (lean startup by [Eric ries](http://en.wikipedia.org/wiki/Eric_Ries)). Many of my friends haven't read it so I thought that a post may persuade them to do so.I will try to present a crux of the book.Lets start with. What is lean startup?. According to eric ries "An organization designed to create new products and services under conditions of extreme uncertainty". Just like alibaba had to tackle 40 thieves to get the teasure enterpreneus on thier treasure hunt have to keep in mind these fourty points which are as under:
 
 
 ###40 points
