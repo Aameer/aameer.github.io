@@ -1,0 +1,49 @@
+---
+layout: post
+description: "Simple example of a cron job"
+modified: 2015-3-27
+category: articles
+analytics: true
+tags: [Cron job, Debian, service]
+comments: true
+share: true
+title: "Cron Jobs"
+date: 2015-03-27T23:53:33+05:30
+---
+### cron job commands
+
+`crontab -l` #to check cron jobs on your debian
+`crontab -r` #to remove
+`crontab -e` #to edit
+
+### simple example in virtualenv
+enter full path to the file where you want to store your logs. e.g
+
+`* * * * * echo ‘Run this command every minute’ >> /home/aameer/Documents/projects/project_name/logs/file.log 2>&1`
+
+Python version to be used has also to be mentioned, we can check it by runnig following file(say crontest.py) with a cron job
+
+{% highlight python linenos %}
+import sys
+print ("-"*100)
+print ("Python Version used")
+print (sys.version)
+print ("Minute over")
+{% endhighlight %}
+
+`* * * * * python /home/aameer/Documents/projects/project_name/crontest.py >> /home/aameer/Documents/projects/project_name/logs/file.log 2>&1`
+
+#Moreover to start or stop a cron job 
+`sudo service cron start`
+`sudo service cron stop`
+
+#to use different python version we provide path
+~/.virtualenvs/project_name/bin/python3.4 /home/aameer/Documents/projects/project_name/crontest.py >> /home/aameer/Documents/projects/project_name/logs/file.log 2>&1
+
+# for all of these commands we can check the output in the file.log.
+
+
+
+
+
+
