@@ -25,7 +25,7 @@ Python version to be used has also to be mentioned, we can check it by runnig fo
 
 {% highlight python linenos %}
 import sys
-print ("-"*100)
+print ("-")
 print ("Python Version used")
 print (sys.version)
 print ("Minute over")
