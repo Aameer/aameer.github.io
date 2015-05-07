@@ -14,14 +14,14 @@ Many times we want to run a bash or a python script on a remote terminal  and wa
 
 How to start a script as screen
 -------------------------------
-* ssh into your remote machine
-* `screen -L` (-L to show ouput on the terminal) you will see some text hit enter again Now you can enter your command here e.g
-* `bash myscript.sh` and then close the window by clicking on the cross mark on the topleft corner of the window
+ ssh into your remote machine
+ `screen -L` (-L to show ouput on the terminal) you will see some text hit enter again Now you can enter your command here e.g
+ `bash myscript.sh` and then close the window by clicking on the cross mark on the topleft corner of the window
 
 How to check the progress
 -------------------------
-* now ssh again into your remote machine
-* `screen -ls` will list all the screens 
-* `screen -r <screen-id>` will move into that screen and show us the output. This will help you keep track of what is happening with the script
+ now ssh again into your remote machine
+ `screen -ls` will list all the screens 
+ `screen -r <screen-id>` will move into that screen and show us the output. This will help you keep track of what is happening with the script
 
 
