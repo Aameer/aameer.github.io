@@ -1,6 +1,5 @@
 ---
 layout: post
-title: "screen command on ubuntu"
 date: 2015-05-07T13:58:39+05:30
 category: articles
 analytics: true
@@ -10,6 +9,7 @@ share: true
 title: "Screen command Ubuntu"
 date: 2015-03-28T10:39:28+05:30
 ---
+
 Many times we want to run a bash or a python script on a remote terminal  and want it to continue to run even if we close the terminal. There is a simple way to do it with the help of 'screen' command.
 
 How to start a script as screen
