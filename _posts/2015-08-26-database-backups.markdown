@@ -26,13 +26,13 @@ Database Name
 `dbpasswd="test"`
 
 store the current date
-`date=`date +"%s"``
+`date=/`date +"%s"/``
 
 Dump the psql database with the current date and compress it.
 `PGPASSWORD=$dbpasswd /usr/bin/pg_dump -U $dbuser $dbname -f $BKUPDIR/production_live_backup_$date.$dbname.sql`
 
 log the time
-`echo 'dump for' $dbname 'taken on' `date +%c -d "$d"``
+`echo 'dump for' $dbname 'taken on' /`date +%c -d "$d"/``
 
 Next is runnig a cronjob which executes this script at regular intervals which creates db dbackup every four hours at mentioned times
 `0 0,4,8,12,16,20 * * * bash /home/aameer/create_db_backup.sh >> /home/aameer/logs/user/create_db_backup.log`
