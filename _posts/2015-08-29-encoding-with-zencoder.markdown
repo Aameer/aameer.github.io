@@ -157,8 +157,7 @@ def main():
 
 if __name__ == '__main__':
     main()
-{% highlight python linenos %}
-
+{% endhighlight %}
 To make the script run contiously (after every 10 mins )you can run a cron job like this
 `*/10 * * * * /usr/local/bin/python3.4  video_aws_elastictranscoder_script.py >> video_aws_elastictranscoder_script.log`
 
