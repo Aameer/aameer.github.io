@@ -9,7 +9,9 @@ title: "Encoding with zencoder"
 date: 2015-08-29T01:44:40+05:30
 ---
 Add the video ids(django model objects/instances in example case) for which you want to run the script for.
+
 {% highlight python linenos %}
+
 import sys
 import os
 LOCAL_DEV = True
@@ -23,6 +25,7 @@ if LOCAL_DEV:
     sys.path.insert(1, '/home/aameer/path_to_project')
 
 os.environ['DJANGO_SETTINGS_MODULE'] = 'projectname.settings'
+
 from zencoder import Zencoder
 from boto.s3.connection import S3Connection
 import simplejson
@@ -157,7 +160,9 @@ def main():
 
 if __name__ == '__main__':
     main()
+
 {% endhighlight %}
+
 To make the script run contiously (after every 10 mins )you can run a cron job like this
 `*/10 * * * * /usr/local/bin/python3.4  video_aws_elastictranscoder_script.py >> video_aws_elastictranscoder_script.log`
 
