@@ -160,9 +160,9 @@ some more refrences:
 --------------------
 some important links which helped are: 
 [stackoverflow 1](http://stackoverflow.com/questions/2573919/creating-signed-urls-for-amazon-cloudfront),
-[stackoverflow 2](http://stackoverflow.com/questions/11270254/how-to-create-a-signed-cloudfront-url-with-python)
-[github 3](https://github.com/boto/boto/issues/2854?_pjax=%23js-repo-pjax-container)
-[cloudfront 4](http://boto.readthedocs.org/en/latest/ref/cloudfront.html)
+[stackoverflow 2](http://stackoverflow.com/questions/11270254/how-to-create-a-signed-cloudfront-url-with-python),
+[github 3](https://github.com/boto/boto/issues/2854?_pjax=%23js-repo-pjax-container),
+[cloudfront 4](http://boto.readthedocs.org/en/latest/ref/cloudfront.html).
 
 Your checklist:
 ---------------
