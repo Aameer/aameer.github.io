@@ -76,7 +76,7 @@ def get_signed_url(full_s3_url):
 {% endhighlight %}
 
 Thanks to [mezka](https://github.com/mekza). we have a patch which will override the  _sign_string.
-Patch takek from [here](https://github.com/boto/boto/issues/2854#issuecomment-134584217)
+Patch taken from [here](https://github.com/boto/boto/issues/2854#issuecomment-134584217)
 Save this piece of code as *boto.py* as we are importing *RSADistribution* mentioned above from here.
 
 {% highlight python linenos %}
@@ -159,10 +159,10 @@ When  origin access identiy updates the bucket policy it will somthing like this
 some more refrences:
 --------------------
 some important links which helped are: 
-stackoverflow [1](http://stackoverflow.com/questions/2573919/creating-signed-urls-for-amazon-cloudfront),
-stackoverflow [2](http://stackoverflow.com/questions/11270254/how-to-create-a-signed-cloudfront-url-with-python)
-github [3] (https://github.com/boto/boto/issues/2854?_pjax=%23js-repo-pjax-container)
-cloudfront [4] (http://boto.readthedocs.org/en/latest/ref/cloudfront.html)
+[stackoverflow 1](http://stackoverflow.com/questions/2573919/creating-signed-urls-for-amazon-cloudfront),
+[stackoverflow 2](http://stackoverflow.com/questions/11270254/how-to-create-a-signed-cloudfront-url-with-python)
+[github 3](https://github.com/boto/boto/issues/2854?_pjax=%23js-repo-pjax-container)
+[cloudfront 4](http://boto.readthedocs.org/en/latest/ref/cloudfront.html)
 
 Your checklist:
 ---------------
@@ -172,3 +172,4 @@ Your checklist:
 * update vals in function accordingly.
 * change distribution settings(restricted viewer access,by adding self and trusted signers).
 * from s3 bucket policy stop direct linking to s3.
+Hope you like the post.
