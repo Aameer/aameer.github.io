@@ -17,8 +17,8 @@ When a user requests content that you're serving with CloudFront, the user is ro
 latency (time delay), so content is delivered with the best possible performance.
 For more details check [AWS documentation](http://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html).
 
-Issue with serving private content or decreasing bills:
--------------------------------------------------------
+Issue with serving private content:
+-----------------------------------
 Now that we know what cloudfront is used for. There is an issue with caching of the our content by cloudfront servers as cloudfront servers
 dont supprot referrer checks which mean anyone with the right cloudfront url can access it which inturn mounts up to more bills for you.
 Also you would face the same issue if you want to serve some private content.To avoid this issue cloudfront gives a feature which is called
