@@ -26,6 +26,9 @@ setup:
 To setup webhooks on recurly we have to login into recurly *console > Developers > webhooks.* There we will add the url to which recurly
 will try to *POST* say `http://mysite.com/test_recurly_webhook/` and then add our credentials. After this we need to setup a view which will 
 listen to this *POST* for django.Since we are using `@csrf_exempt` we will try to only allow requests from the ip list (from [docs](https://docs.recurly.com/push-notifications))
+
+![Recurly Webhook Cosole](/images/recurly_webhook_console.png)
+
 mentioned under:
 
 {% highlight python linenos %}
