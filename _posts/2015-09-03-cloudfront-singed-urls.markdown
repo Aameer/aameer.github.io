@@ -30,7 +30,7 @@ Implementation:
 In this example we will use *boto 2.37, django 1.7, python 3.4, cryptography 1.0.* Note that there is an issue from *boto 2.34* onwards which this post will
 address, details of the issue are [here](https://github.com/boto/boto/issues/2854).
 
-#script to generate signed urls
+script to generate signed urls
 {% highlight python linenos %}
 
 import boto
