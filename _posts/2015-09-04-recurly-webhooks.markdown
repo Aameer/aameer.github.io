@@ -46,9 +46,18 @@ allowedIps=['64.74.141.0', '8.36.93.0.0', '64.74.141.1', '8.36.93.0.1', '64.74.1
     '8.36.93.0.20', '64.74.141.21', '8.36.93.0.21', '64.74.141.22', '8.36.93.0.22', '64.74.141.23', 
     '8.36.93.0.23']
 
+def get_client_ip(request):
+    x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
+    if x_forwarded_for:
+        ip = x_forwarded_for.split(',')[0]
+    else:
+        ip = request.META.get('REMOTE_ADDR')
+    return ip
+
 def allow_by_ip(view_func):
     def authorize(request, *args, **kwargs):
-        user_ip = request.META['REMOTE_ADDR']
+        #user_ip = request.META['REMOTE_ADDR']
+        user_ip = get_client_ip(request)
         for ip in allowedIps:
             if ip==user_ip:
                 return view_func(request, *args, **kwargs)
