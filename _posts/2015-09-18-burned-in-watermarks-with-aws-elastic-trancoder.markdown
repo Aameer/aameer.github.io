@@ -9,17 +9,23 @@ title: "Burned In watermarks with AWS Elastic Trancoder with builtin text to ima
 date: 2015-09-18T16:57:00+05:30
 ---
 
+Introduction:
+-------------
 AWS elastic transcoder allows us to create a trancoded video with burned in watermarked trancoded videos.For details about setting up aws 
 elastic encoder from scratch check my post regarding [aws elastic transcoder](http://aameer.github.io/articles/aws-elastic-encoder/). Here I 
 will be discussing how to get a burned in watermakred transcoded video you just have to replace `get_output_objects` function in the previous 
 post and add `create_watermark_image` and `upload_watermark_image_to_s3` fucntions to your code and you are good to go.
 Note you have to update the presetIds and locations and paths as per your need
 
+Text to Image Conversion:
+-------------------------
 Aws Elastic trancoder doesnt allow text as watermarks so what we do is convert the text into Image using python's Image Library and then save
 it on s3 and the use it as watermark image.Hope you like the post
 
-
+Code:
+-----
 {% highlight python linenos %}
+
 import os
 from PIL import Image
 from PIL import ImageDraw
@@ -118,4 +124,5 @@ def get_output_objects(project_id,video):
         }
     ]
     return (output_objects)
+
 {% endhighlight %}
