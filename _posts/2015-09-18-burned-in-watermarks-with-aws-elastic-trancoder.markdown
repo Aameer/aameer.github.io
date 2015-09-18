@@ -8,6 +8,7 @@ share: true
 title: "Burned In watermarks with AWS Elastic Trancoder with builtin text to image conversion"
 date: 2015-09-18T16:57:00+05:30
 ---
+
 AWS elastic transcoder allows us to create a trancoded video with burned in watermarked trancoded videos.For details about setting up aws 
 elastic encoder from scratch check my post regarding [aws elastic transcoder](http://aameer.github.io/articles/aws-elastic-encoder/). Here I 
 will be discussing how to get a burned in watermakred transcoded video you just have to replace `get_output_objects` function in the previous 
