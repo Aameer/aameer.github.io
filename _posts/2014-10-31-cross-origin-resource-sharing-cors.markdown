@@ -21,7 +21,7 @@ Here one server acts as proxy for other servers, issue with this approach is tha
 * jsonp
 [jsonp](http://en.wikipedia.org/wiki/JSONP) JavaScript Object Notation with padding. Take a pure json, make it function call then eval in the browser.Note same origin policy doesnt apply to resource loading(script tags), lets see an example `json:{'price':42}`, `jsonp:callback({'price':42});`
 
-{% highlight javascript linenos %}
+{% highlight js linenos %}
 $.ajax({
 	...
 	dataType:"json",
@@ -49,7 +49,7 @@ All verbs, all data types
 
 * Client Side Example
 
-{% highlight javascript linenos %}
+{% highlight js linenos %}
 $.ajax ({
 	dataType:"json",
 	xhrFields:{withCredentials:true} //pass cookie, credentials
@@ -119,7 +119,7 @@ location / {
 * Implemented Client Side Code (ajax)
 -------------------------------------
 
-{% highlight javascript linenos %}
+{% highlight js linenos %}
 server_name = "mytestsever.com";
 
 //GET

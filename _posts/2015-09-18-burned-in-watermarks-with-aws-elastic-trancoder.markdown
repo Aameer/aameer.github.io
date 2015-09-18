@@ -24,6 +24,7 @@ it on s3 and the use it as watermark image.Hope you like the post
 
 Code:
 -----
+
 {% highlight python linenos %}
 
 import os

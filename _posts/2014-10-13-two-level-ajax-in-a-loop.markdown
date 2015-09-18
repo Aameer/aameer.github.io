@@ -18,7 +18,7 @@ I was runnig a javascript which called a function `element_class_clicked` in loo
 
 Also a refrence has to be passed to this function. As the code demands to call two ajax calls one after the other was done, so with the help of call backs we did that. The `ajaxOptsAjaxFirst` call was internally (`some_fn`) calling the `ajaxOptsAjaxSecond` and all of this was done inside namespaces. Code with issues is as under:
 
-{% highlight javasript linenos %}
+{% highlight js linenos %}
 var NAMESPACE ={
   SubpartNamespace : {  
     element_class_clicked : function(clicked_element){
