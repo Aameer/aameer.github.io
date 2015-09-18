@@ -12,6 +12,7 @@ date: 2015-08-24T22:25:54+05:30
 This script gets a list of videos(objects in my case) which havent been encoded and tries to get them transcoded from correponding pipeline on Amazon Elastic Transcoder and then print the status on console, you can even update your app based on your needs.
 
 {% highlight python linenos %}
+
 import os
 import sys
 from django.conf import settings
@@ -174,6 +175,7 @@ def main():
 
 if __name__ == '__main__':
     main()
+
 {% endhighlight %}
 # to make the script run contiously (after every 10 minutes) you can run a cron job like this
 `*/10 * * * * /usr/local/bin/python3.4  video_aws_elastictranscoder_script.py >> video_aws_elastictranscoder_script.log`

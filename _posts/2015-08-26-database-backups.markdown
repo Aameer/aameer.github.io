@@ -38,7 +38,9 @@ Next is runnig a cronjob which executes this script at regular intervals which c
 `` `0 0,4,8,12,16,20 * * * bash /home/aameer/create_db_backup.sh >> /home/aameer/logs/user/create_db_backup.log` ``
 
 Last piece of puzzle is getting the saved scripts from server to s3
+
 {% highlight python linenos %}
+
 #! /usr/local/bin/python3.4 -u
 import sys
 import os
@@ -65,5 +67,7 @@ for files in os.listdir("."):
         print (cmpu_250)
         bucket.set_acl('private', cmpu_250.key_name)
         print ('upload file %s' % files)                   
+
 {% endhighlight %}
+
 Now you are taking the data backups at regular intervals.Hope you liked the post

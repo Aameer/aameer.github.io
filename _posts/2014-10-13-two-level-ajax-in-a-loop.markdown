@@ -19,6 +19,7 @@ I was runnig a javascript which called a function `element_class_clicked` in loo
 Also a refrence has to be passed to this function. As the code demands to call two ajax calls one after the other was done, so with the help of call backs we did that. The `ajaxOptsAjaxFirst` call was internally (`some_fn`) calling the `ajaxOptsAjaxSecond` and all of this was done inside namespaces. Code with issues is as under:
 
 {% highlight js linenos %}
+
 var NAMESPACE ={
   SubpartNamespace : {  
     element_class_clicked : function(clicked_element){
@@ -102,6 +103,7 @@ window.onload= function() {
     }); 
   });
 };
+
 {% endhighlight %}
 
 Here the problem was that sometimes on slower servers or clients on slower networks, before we recieved the response for `ajaxOptsAjaxSecond`, the code would proceed ahead and thus give wrong results, as it would was loose the context for `clicked_element` for that paticular response.
@@ -109,6 +111,7 @@ Here the problem was that sometimes on slower servers or clients on slower netwo
 I tried to use many solutions and hacks, like setimeout , many other solutions mentioned on [stackoverflow](www.stackoverflow.com) but none of them seemed to work for my problem. Then I solved it with by having simple abstraction for the `ajaxOptsAjaxFirst`. Code is as under:
 
 {% highlight javascript linenos %}
+
 var NAMESPACE ={
   SubpartNamespace : {  
     seperate_ajax_fn: function(canvas, form_vals){
@@ -178,6 +181,7 @@ var NAMESPACE ={
     },
   },
 };
+
 {% endhighlight %}
 
 What it does is, it creates a stack for the `seperate_ajax_fn` and thus saves the context for arguments.Thus this solution will even work for slower networks as it will wait for the response for `ajaxOptsAjaxFirst` and pass corresponsing arguments which it had saved in stack. Here with just some restucturing of code in the Namespace we got the desired result.

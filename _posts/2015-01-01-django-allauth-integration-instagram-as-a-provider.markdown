@@ -58,12 +58,14 @@ INSTALLED_APPS = (
 )
 
 SITE_ID = 1
+
 {% endhighlight %}
 
 urls.py
 -------
 
 {% highlight python linenos %}
+
 urlpatterns = patterns('',
     ...
     (r'^accounts/', include('allauth.urls')),

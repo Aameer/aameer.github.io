@@ -24,11 +24,13 @@ enter full path to the file where you want to store your logs. e.g
 Python version to be used has also to be mentioned, we can check it by runnig following file(say crontest.py) with a cron job
 
 {% highlight python linenos %}
+
 import sys
 print ("-")
 print ("Python Version used")
 print (sys.version)
 print ("Minute over")
+
 {% endhighlight %}
 
 `* * * * * python /home/aameer/Documents/projects/project_name/crontest.py >> /home/aameer/Documents/projects/project_name/logs/file.log 2>&1`

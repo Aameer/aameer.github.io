@@ -31,6 +31,7 @@ In this example we will use *boto 2.37, django 1.7, python 3.4, cryptography 1.0
 address, details of the issue are [here](https://github.com/boto/boto/issues/2854).
 
 script to generate signed urls
+
 {% highlight python linenos %}
 
 import boto
@@ -80,6 +81,7 @@ Patch taken from [here](https://github.com/boto/boto/issues/2854#issuecomment-13
 Save this piece of code as *boto.py* as we are importing *RSADistribution* mentioned above from here.
 
 {% highlight python linenos %}
+
 from boto.cloudfront.distribution import Distribution
 from cryptography.hazmat.primitives.asymmetric import padding
 from cryptography.hazmat.primitives import serialization
@@ -141,6 +143,7 @@ Policy will check if the referer is from the s3 then deny the request, policy wo
 {% endhighlight %}
 
 When  origin access identiy updates the bucket policy it will somthing like this:
+
 {% highlight python linenos %}
 
 {

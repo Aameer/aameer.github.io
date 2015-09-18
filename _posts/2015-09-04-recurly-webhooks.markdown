@@ -32,6 +32,7 @@ listen to this *POST* for django.Since we are using `@csrf_exempt` we will try t
 mentioned under:
 
 {% highlight python linenos %}
+
 from django.http import HttpResponse,
 from django.views.decorators.csrf import csrf_exempt
 import recurly
@@ -139,6 +140,7 @@ def recurly_webhook(request):
             #your buisness logic
         logger.info('log for %s' % notification['type'])
         return HttpResponse('success')
+
 {% endhighlight %}
 
 You can remove the `@allow_by_ip` decorator if you dont want authentication by ip.Hope you liked the post

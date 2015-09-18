@@ -22,6 +22,7 @@ Here one server acts as proxy for other servers, issue with this approach is tha
 [jsonp](http://en.wikipedia.org/wiki/JSONP) JavaScript Object Notation with padding. Take a pure json, make it function call then eval in the browser.Note same origin policy doesnt apply to resource loading(script tags), lets see an example `json:{'price':42}`, `jsonp:callback({'price':42});`
 
 {% highlight js linenos %}
+
 $.ajax({
 	...
 	dataType:"json",
@@ -34,6 +35,7 @@ $.ajax({
 	jsonp:"jsonp",
 	...
 });
+
 {% endhighlight %}
 
 what it does is create a script tag and making your browser "eval" the lot. Each time each request comes in.Some known security holes are there, any script you bring in has access to your data/dom/ private parts. Moreover Jsonp is GET only and for our usual RESTful Api's we need other http verbs too.
@@ -50,11 +52,13 @@ All verbs, all data types
 * Client Side Example
 
 {% highlight js linenos %}
+
 $.ajax ({
 	dataType:"json",
 	xhrFields:{withCredentials:true} //pass cookie, credentials
 	...
 });
+
 {% endhighlight %}
 
 Most of the work happens between browser and server, using http headers called *"pre flight checks"*.The browser passes origin header to server e.g
@@ -97,6 +101,7 @@ Note that authorization has to be handled by your app.
 ----------------------------------
 
 {% highlight nginx linenos %}
+
 # pass requests for dynamic content to rails/turbogears/zope, et al
 location / {
 	 ...
@@ -114,12 +119,14 @@ location / {
 	}
 	...
 }
+
 {% endhighlight %}
 
 * Implemented Client Side Code (ajax)
 -------------------------------------
 
 {% highlight js linenos %}
+
 server_name = "mytestsever.com";
 
 //GET
@@ -151,6 +158,7 @@ ajaxOpts = {
 	},
 };
 jQuery.ajax(ajaxOpts);
+
 {% endhighlight %}
 
 For django one can skip all this an simple use [django-cors-headers](https://github.com/ottoyiu/django-cors-headers) plugin or directly add the headers in the view which responds to the urls in the ajax calls.
