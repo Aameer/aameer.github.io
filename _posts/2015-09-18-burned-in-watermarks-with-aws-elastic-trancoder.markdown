@@ -5,7 +5,7 @@ analytics: true
 tags: [Watermarks, Burned Watermarks, python, Django, AWS, Elastic trancoder, Text to Image Conversion, PIL]
 comments: true
 share: true
-title: "Burned In watermarks with AWS Elastic Trancoder with builtin text to image conversion"
+title: "Burned In watermarks with AWS Elastic Trancoder"
 date: 2015-09-18T16:57:00+05:30
 ---
 
