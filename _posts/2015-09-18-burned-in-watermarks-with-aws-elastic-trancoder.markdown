@@ -17,7 +17,8 @@ Note you have to update the presetIds and locations and paths as per your need
 Aws Elastic trancoder doesnt allow text as watermarks so what we do is convert the text into Image using python's Image Library and then save
 it on s3 and the use it as watermark image.Hope you like the post
 
-``` python
+
+{% highlight python linenos %}
 import os
 from PIL import Image
 from PIL import ImageDraw
@@ -116,4 +117,4 @@ def get_output_objects(project_id,video):
         }
     ]
     return (output_objects)
-```
+{% endhighlight %}
