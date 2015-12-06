@@ -125,7 +125,7 @@ again change some fucntions here:
 
 {% highlight python linenos %}
 
-defget_outputs(project_id,video_id):
+def get_outputs(project_id,video_id):
     print('getting outputs')
     bucket_name = 's3://%s/'%(settings.AWS_BUCKET_NAME)
     print(bucket_name)
