@@ -16,7 +16,6 @@ HLS i.e HTTP Live Streaming is an HTTP-based media streaming communications prot
 
 * More secure than progressive download method
 * Uses the network more efficiently
-* Prevents the video grabbers from downloading your video which most of the users use to grab it.
 
 why HLS:
 -------
