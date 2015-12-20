@@ -25,7 +25,7 @@ To install latex on ubuntu use command `$sudo apt-get install texlive-full`. Aft
 
 for docs link is [here](http://www.tug.org/texlive/doc/texlive-en/texlive-en.html)
 
-Moreover you dont need to write a new template there are many templates available online, there are many online tools too e.g [sharelatex](www.sharelatex.com) is one of the famous ones.So, Next time when you need an awesome doc give latex a try,it will test your patience so do keep in mindthat
+Moreover you dont need to write a new template there are many templates available online, there are many online tools too e.g [sharelatex](https://www.sharelatex.com/) is one of the famous ones.So, Next time when you need an awesome doc give latex a try,it will test your patience so do keep in mindthat
  
 > Change is hard at the beginning, mess in the middle and gorgeus at the end.
 
