@@ -10,12 +10,12 @@ image:
   creditlink: http://mademistakes.com
 ---
 
-May peace and mercy of Allmighty be on you.This is **Aameer**.I have recently completed my education and started working for a tech start up in Hyderabad, India.I love _Augmented Reality_ and building softwares.I love to learn and innovate new things.
+> Raise your words, not voice. It is rain that grows flowers, not thunder - Rumi
 
-During past few months open source community has helped me a lot and by this blog I want to contribute to this amazing community.I will be sharing many things in near future mostly technical in nature, which may be helpful to anyone facing similar kind of problems.Moreover, these posts will also serve as a future refrence for me.
+May peace and mercy of Allmighty be on you. This is **Aameer**. I love startups and I am huge fan of entrepreneurs. I have been fortunate enough to be around tech startups for past few years. I love to learn and innovate new things with researchers, hackers and most importantly with dreamers. Coming from beautiful but conflict ridden place viz. [Valley](https://www.google.co.in/maps/place/Srinagar/@34.1069229,74.6663249,11z/data=!4m2!3m1!1s0x38e1855686e3c5ef:0x66244b7cc1e305c6) (not the silicon valley but the one in silly-con-dition) I had hard time figuring out things by myself. During that period open source community helped me a lot and by this blog I want to contribute and be a part of this amazing revolution. I will be sharing many things  mostly technical in nature or related to startups, which may or maynot be helpful to anyone facing similar kind of problems. Moreover, I also forget many things so these posts will also serve as a future refrence for me.
 
-Thank god  you are not bored to death, so I hope you will keep testing your patience with me and keep on following my posts.
-Apart from computers I love travelling, eating, sports and making new friends, so do contact me if you feel so.
+Thank god  you are not bored to death, so I hope you will keep testing your patience with me and keep on following my posts. Apart from computers I love travelling, eating, sports and making new friends, so do contact me if you feel so. I also write about some other intresting stuff on my [medium blog](https://medium.com/@aameer).
 
 ## Reach me
 You can Reach me at aameer@gmail.com.
+
