@@ -5,7 +5,7 @@ analytics: true
 tags: [Cloudfront,S3,Debian,python,Django,Signed Urls, Secure content distribution, avoid cloudfront hotlinking]
 comments: true
 share: true
-title: "Cloudfront Singed Urls"
+title: "Cloudfront Signed Urls"
 date: 2015-09-03T21:33:00+05:30
 ---
 
