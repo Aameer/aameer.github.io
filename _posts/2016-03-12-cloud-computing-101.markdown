@@ -53,7 +53,7 @@ Now comes the part where you automate the transcoding and get an instance up whe
 {% highlight python linenos %}
 
 python manage.py shell
-from common.ec2_instance_switch import generate_hidden_burned_watermark_screener
+from ec2_instance_switch import generate_hidden_burned_watermark_screener
 generate_hidden_burned_watermark_screener()
 
 {% endhighlight %}
