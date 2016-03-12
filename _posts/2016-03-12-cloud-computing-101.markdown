@@ -48,9 +48,7 @@ we will aso be using aws cli to copy files from and to s3
 once you have all the necessary scripts on the ec2 instance you can create and image for this instance, image-id  from which we can use later on
 The scripts will handle the actual transcoding and copying of files
 
-Now comes the part where you automate the transcoding and get an instance up whenever you like and transcode the video we will use python and boto for this for this part we will use `ec2_instance_switch.py` script
-
-and then we can just call the python shell 
+Now comes the part where you automate the transcoding and get an instance up whenever you like and transcode the video we will use python and boto for this for this part we will use `ec2_instance_switch.py` script and then we can just call the python shell.
 
 {% highlight python linenos %}
 
@@ -62,7 +60,7 @@ generate_hidden_burned_watermark_screener()
 
 if everything went fine you should see your instance getting up which you can check from ec2 console too , It will copy the original file (for now assumed to be mp4) to ec2 and then burn the watermark text at desiered position with hls (adaptive streaming enabled) and then save it back on s3 and give us the link for final master index file. After the transcoding is done it will close the instance and save the logs on s3 for future refrence it will also save the time it took for different transcode versions to complete.
 
-Files with code are as under
+Code Files which you will need:
 
 ###aws_credentials.sh:
 
