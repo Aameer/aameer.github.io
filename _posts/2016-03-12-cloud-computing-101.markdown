@@ -1,7 +1,7 @@
 ---
 layout: post
 analytics: true
-tags: [Cloud computing, EC2, Shell Scripting, boto, jwplayer, S3, ffmpeg, hls, burned watermark, multiprocessing]
+tags: [Cloud computing, EC2, Shell Scripting, boto, jwplayer, S3, ffmpeg, hls, burned watermarking, multiprocessing]
 comments: true
 share: true
 title: "Cloud Computing 101"
@@ -10,7 +10,6 @@ date: 2016-03-12T22:14:57+05:30
 
 Cloud Computing:
 ----------------
-
 Cloud computing, is a kind of Internet-based computing that provides shared processing resources and data to computers and other devices on demand. It is a model for enabling ubiquitous, on-demand access to a shared pool of configurable computing resources [wiki](https://en.wikipedia.org/wiki/Cloud_computing) or as our friend google says that it is The practice of using a network of remote servers hosted on the Internet to store, manage, and process data, rather than a local server or a personal computer.
 
 What this post aims to do:
@@ -21,9 +20,10 @@ Things this post assumes you know:
 ---------------------------------
 As we will try to develope a system which will perform transcoding i.e a computing task (similar to zenoders transcoding or aws's transcoding for details please refer to some [previous articles](http://aameer.github.io/articles/)) over cloud and for this we will be using some shell scripts and python library for aws called boto. Moreover we will also be using aws cli for this purpose, so without a due lets do some coding.
 
-sections:
+Sections:
 ---------
 We will divide our objective into several parts: 
+
 * Use a cloud infrastructure(EC2 in our case) to do some work/computing (transcoding)
 * Get the inputs from source(s3 in our case) and save them to destination(again s3 in our case)
 * automate the workflow
