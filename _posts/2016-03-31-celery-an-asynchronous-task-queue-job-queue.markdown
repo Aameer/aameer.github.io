@@ -49,8 +49,8 @@ Although with the latest version of celery you may not need this but we will sti
 Add `djcelery` to `INSTALLED_APPS`.
 `python manage.py migrate djcelery`
 
-inside the mysite/celery.py add some code for initializing celery (link to celery.py)
-Also add in mysite/__init__ some code (link to init)
+inside the mysite/celery.py add some code for initializing celery check file [here](https://github.com/Aameer/celerydemo/blob/master/mysite/celery.py)
+Also add in mysite/__init__ some code details [here](https://github.com/Aameer/celerydemo/blob/master/mysite/__init__.py)
 
 plus then we can have a demoapp whcih will have tasks.py file from where we can add tasks and import and call delay on them.   
 
