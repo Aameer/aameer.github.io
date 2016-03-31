@@ -1,6 +1,6 @@
 ---
 layout: post
-nalytics: true
+analytics: true
 tags: [Celery, Task queue, distributed message passing, Ubuntu, Django, Python, flower]
 comments: true
 share: true
