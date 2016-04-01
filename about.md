@@ -6,7 +6,7 @@ tags: [Aameer, Augmented Reality, About me]
 modified: 2014-08-12
 image:
   feature: so-simple-sample-image-4.jpg
-  credit: Michael Rose
+  credit: Burhan
   creditlink: http://mademistakes.com
 ---
 
