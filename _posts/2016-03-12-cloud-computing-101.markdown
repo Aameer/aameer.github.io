@@ -62,7 +62,7 @@ if everything went fine you should see your instance getting up which you can ch
 
 Code Files which you will need:
 
-###aws_credentials.sh:
+### aws_credentials.sh:
 
 {% highlight python linenos %}
 
@@ -74,7 +74,7 @@ export AWS_DEFAULT_REGION='your_aws_region'
 {% endhighlight %}
 
 
-###copy_logs.sh:
+### copy_logs.sh:
 
 {% highlight python linenos %}
 
@@ -157,7 +157,7 @@ aws ec2 stop-instances --instance-ids ${InstanceId} --region us-east-1
 
 {% endhighlight %}
 
-###ec2_instance_switch.py:
+### ec2_instance_switch.py:
 
 {% highlight python linenos %}
 
@@ -346,7 +346,7 @@ def generate_hidden_burned_watermark_screener():
 
 {% endhighlight %}
 
-###encoding_script_watermarked.sh
+### encoding_script_watermarked.sh
 
 {% highlight python linenos %}
 
