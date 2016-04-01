@@ -8,7 +8,7 @@ title: "circus as an alternative to supervisor"
 date: 2016-04-01T00:24:31+05:30
 ---
 
-Using circus as an alternative to supervisor for python3 as supervisor (less than version 4) doesnt support python 3 and  If are not using virtualenvs and are using python3 in your apps then you may want to have a look below. Our objective in this post is to daemonize celery with the help of circus which is an alternative for its widely used counterpart supervisor
+Using [circus](rcus.readthedocs.org) as an alternative to supervisor for python3 as supervisor (less than version 4) doesnt support python 3 and  If are not using virtualenvs and are using python3 in your apps then you may want to have a look below. Our objective in this post is to daemonize celery with the help of circus which is an alternative for its widely used counterpart supervisor
 
 install circus:
 `pip3.4 install circus`
