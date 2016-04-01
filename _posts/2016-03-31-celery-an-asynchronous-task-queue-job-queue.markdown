@@ -14,7 +14,7 @@ Celery is an asynchronous task queue/job queue based on distributed message pass
 
 What will we do:
 ----------------
-We will build a demo celery project to get a basic understanding of it. So let us start.
+We will build a demo celery project [check github repo for details](https://github.com/Aameer/celerydemo) to get a basic understanding of it. So let us start.
 
 make a virtualenvironment
 `mkviretualenv celerydemo`
