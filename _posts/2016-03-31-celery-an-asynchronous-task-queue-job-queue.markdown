@@ -24,20 +24,20 @@ make a virtualenvironment
 start from here:
 do go through the [docs](http://docs.celeryproject.org/en/latest/getting-started/first-steps-with-celery.html#first-steps) atleast once.As per docs in this tutorial you will learn the absolute basics of using Celery. You will learn about:
 
-Choosing and installing a message transport (broker).
+###Choosing and installing a message transport (broker):
+
 * Installing Celery and creating your first task.
 * Starting the worker and calling tasks.
 * Keeping track of tasks as they transition through different states, and inspecting return values.
 
 1.chosing a broker: rabbitmq for this post
 `sudo apt-get install rabbitmq-server` more about rabbitmq [here](https://www.rabbitmq.com/)
-if you are installing it on webfaction or something then check this [post](http://aameer.github.io/installing-rabbitmq-on-webfaction/)
+.If you are installing it on webfaction then check this [post](http://aameer.github.io/installing-rabbitmq-on-webfaction/)
 
-
-Installing celery:
+###Installing celery:
 `pip install celery`
 
-Install django and getting project ready:
+###Install django and getting project ready:
 `pip install Django==1.7`
 `mkdir celerydemo`
 `cd celerydemo`
@@ -56,21 +56,21 @@ Also add in mysite/__init__ some code details [here](https://github.com/Aameer/c
 
 plus then we can have a demoapp whcih will have tasks.py file from where we can add tasks and import and call delay on them.   
 
-run the celery:
+###run the celery:
 `python manage.py celeryd -B -l info`
 
-run the camera
+###run the camera
 `python manage.py celery events --camera=djcelery.snapshot.Camera`
 
-run the server:
+###run the server:
 `python manage runserver`
 
-to test out everything:
+###To test out everything:
 `python manage.py shell`
 `from demoapp.tasks import add`
 `add.delay(4,4)`
 
-check the celery console to see the tasks
+###check the celery console to see the tasks
 
 for monitoring if the tasks are not showing up on the admin panel beacause of some issue with django-celery you can use [flower](http://flower.readthedocs.org/en/latest/install.html)
 `pip install flower`
