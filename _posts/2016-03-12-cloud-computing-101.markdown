@@ -18,6 +18,8 @@ But there are tones of resources online where you would find more desciption wha
 
 ![Diagram1](/images/cloud_computing.jpg)
 
+we will take on other parts (like celery alongwith rabbitmq and circus which are not mentioned in the diagram for maintaining the simplicity) of the diagram in comming posts.
+
 Things this post assumes you know:
 ---------------------------------
 As we will try to develope a system which will perform transcoding i.e a computing task (similar to zenoders transcoding or aws's transcoding for details please refer to some [previous articles](http://aameer.github.io/articles/)) over cloud and for this we will be using some shell scripts and python library for aws called boto. Moreover we will also be using aws cli for this purpose, so without a due lets do some coding.
