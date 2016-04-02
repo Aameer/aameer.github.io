@@ -5,7 +5,7 @@ tags: [Celery, Task queue, distributed message passing, Ubuntu, Django, Python, 
 comments: true
 share: true
 title: "Installing rabbitmq on webfaction"
-date: 2016-05-01T00:37:05+05:30
+date: 2016-04-02T00:37:05+05:30
 ---
 
 Erlang is needed to install rabbitmq on webfaction. First create a custom app erlang on webfaction listneing to some port (say 25090)
