@@ -14,7 +14,9 @@ Cloud computing, is a kind of Internet-based computing that provides shared proc
 
 What this post aims to do:
 --------------------------
-But there are tones of resources online where you would find more desciption what I will be trying to achieve with this post is to build a working model/example to depeer understanding of this concept.
+But there are tones of resources online where you would find more desciption what I will be trying to achieve with this post is to build a working model/example to depeer understanding of this concept.Check the daigram below it represent a sample real world cloud computing application. we will try to explore the part where the worker(which can be your app interacting with ec2 part) is just us triggering by calling a function `generate_burned_watermark_screener`.
+
+![Diagram1](/images/cloud_computing.jpg)
 
 Things this post assumes you know:
 ---------------------------------
@@ -53,8 +55,8 @@ Now comes the part where you automate the transcoding and get an instance up whe
 {% highlight python linenos %}
 
 python manage.py shell
-from ec2_instance_switch import generate_hidden_burned_watermark_screener
-generate_hidden_burned_watermark_screener()
+from ec2_instance_switch import generate_burned_watermark_screener
+generate_burned_watermark_screener()
 
 {% endhighlight %}
 
@@ -329,7 +331,7 @@ def transcode_request_for_ec2(watermark_text,mother_video):
         print('some s3 files are missing something went haywire with instance %s' % instance)
         return None
 
-def generate_hidden_burned_watermark_screener():
+def generate_burned_watermark_screener():
     #I am using a video object here for simplicity
     mother_video_id ="3627"
     watermark_text ="Ec2 test 104"
