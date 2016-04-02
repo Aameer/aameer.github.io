@@ -14,7 +14,9 @@ Celery is an asynchronous task queue/job queue based on distributed message pass
 
 What will we do:
 ----------------
-We will build a demo celery project [check github repo for details](https://github.com/Aameer/celerydemo) to get a basic understanding of it. So let us start.
+We will build a demo celery project [check github repo for details](https://github.com/Aameer/celerydemo) to get a basic understanding of it. So let us start. which should cover the using celery in a set up like mentioned in the diagram
+
+![Diagram1](/images/cloud_computing.jpg)
 
 make a virtualenvironment
 `mkviretualenv celerydemo`
@@ -29,7 +31,7 @@ Choosing and installing a message transport (broker).
 
 1.chosing a broker: rabbitmq for this post
 `sudo apt-get install rabbitmq-server` more about rabbitmq [here](https://www.rabbitmq.com/)
-if you are installing it on webfaction or something then check this post (comming soon!)
+if you are installing it on webfaction or something then check this [post](http://aameer.github.io/installing-rabbitmq-on-webfaction/)
 
 
 Installing celery:
@@ -79,4 +81,4 @@ localhost:5555
 then we can see the tasks in real time on the dash flower board
 note naming the task(`@task(name='demoapp.tasks.add')`) and using snapshot(`python manage.py celery events --camera=djcelery.snapshot.Camera`) together could work just fine wihthout flower.
 
-Moreover you can demonize celery with supervisor or circus but thats topic for another day!
+Moreover you can demonize celery with supervisor or circus. If you are interested in circus check [this](http://aameer.github.io/circus-as-an-alternative-to-supervisor/) post
