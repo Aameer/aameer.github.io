@@ -4,6 +4,8 @@ category: articles
 analytics: true
 tags: [Secure Adaptive Streaming, HLS, zencoder, AWS, jwplayer, Ecnryption, AES-128, Netflix, AWS Elastic Transcoder]
 title: "Government/Netflix level Encryption"
+comments: true
+share: true
 date: 2016-12-17T13:31:45+05:30
 ---
 
