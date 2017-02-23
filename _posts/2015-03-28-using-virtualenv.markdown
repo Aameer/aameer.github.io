@@ -27,9 +27,9 @@ install setuptools
 I am a vim fan, if you don't have vim
 `sudo apt-get install vim`
 
-vim .bashrc and add this line in the end, SETUP virtualenvwrapper for python incase default doesn't work
-`export VIRTUALENVWRAPPPER_PYTHON=/usr/bin/python3.4`
-`export VIRTUALENVWRAPPPER_PYTHON`
+`vim .bashrc` and append these lines at the end, SETUP virtualenvwrapper for python incase default doesn't work
+`export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3.4`
+`export VIRTUALENVWRAPPER_PYTHON`
 
 needed for virtualenvwrapper
 `export WORKON_HOME=$HOME/.virtualenvs`
