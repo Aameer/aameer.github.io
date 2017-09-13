@@ -201,6 +201,14 @@ Once you have hosted them you need a DRM enabled player to play it. In this case
 {% endhighlight %}
 
 # Closing Notes
+
+I have added credits whereever applicable. In addition to that I would like to thank
+
+*  **David Eisenbacher** (CEO and Co-Founder, EZDRM Inc) and others from ezdrm.
+*  **Dave Otten** (CEO jwplayer) and others from Jwplayer for the help. 
+*  **Gilles Boccon-Gibod** (creator of bento4) for his time and valuable inputs.
+{: style="color:blue; font-size: 80%;"}
+
 I havent tested this but in some cases you may need to run the below mentioned command for ffmpeg to work as mentioned in this article 
 `sudo apt-get install libavcodec-extra-54`
 
@@ -213,14 +221,6 @@ One more thing to notice is this setup doesnt cover IOS as fariplay supports IOS
 If you dont want to deal with all this complexity then you can also use services like [bitmovin](http://bitmovin.com/) where they will take care of everything for you. You just need to supply values and receive output streams.
 
 Since this is a very complex system there is a chance I may have missed some details in that case please get in touch. There is lot more to DRM that just this but hope this post was worth your time and gave you a picture of DRM.
-
-
-I have added credits whereever applicable. In addition to that I would like to thank
-
-*  **David Eisenbacher** (CEO and Co-Founder, EZDRM Inc) and others from ezdrm.
-*  **Dave Otten** (CEO jwplayer) and others from Jwplayer for the help. 
-*  **Gilles Boccon-Gibod** (creator of bento4) for his time and valuable inputs.
-{: style="color:blue; font-size: 80%;"}
 
 Thanks for your time.
 
