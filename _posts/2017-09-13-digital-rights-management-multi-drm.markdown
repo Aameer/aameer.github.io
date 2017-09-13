@@ -10,50 +10,59 @@ share: true
 date: 2017-09-13T20:43:41+05:30
 ---
 
-# what :question: 
+# what
 
-> *Digital rights management (DRM) schemes are various access control technologies that are used to restrict usage of proprietary hardware and copyrighted works. DRM technologies try to control the use, modification, and distribution of copyrighted works (such as software and multimedia content), as well as systems within devices that enforce these policies* .For more details check [wiki](https://en.wikipedia.org/wiki/Digital_rights_management) :thinking_face: 
+> *Digital rights management (DRM) schemes are various access control technologies that are used to restrict usage of proprietary hardware and copyrighted works. DRM technologies try to control the use, modification, and distribution of copyrighted works (such as software and multimedia content), as well as systems within devices that enforce these policies* .For more details check [wiki](https://en.wikipedia.org/wiki/Digital_rights_management).
 
-In 1983, a very early implementation of Digital Rights Management (DRM) was the Software Service System (SSS) devised by the Japanese engineer Ryuichi Moriya. Today you DRM has expanded to traditional hardware products, from Keurig's coffeemakers, Philips' light bulbs, mobile device power chargers, and John Deere's tractors. You can find it applied in 
-Computer Games by publishers like Electronic Arts, Ubisoft and The Sims3 and also in IBooks, Kindle etc which use DRM scheme of one or the other kind. :robot_face: 
+# History 
+Remember product key (A typically alphanumerical serial number used to represent a license to a particular piece of software), it is one of the oldest and least complicated DRM protection methods for the computer games. 
 
-# why :question: 
-Although use of DRM is not universally accepted. Proponents of DRM argue that it is necessary to prevent intellectual property from being copied freely, just as physical locks are needed to prevent personal property from being stolen, that it can help the copyright holder maintain artistic control, and that it can ensure continued revenue streams. Those opposed to DRM contend there is no evidence that DRM helps prevent copyright infringement, arguing instead that it serves only to inconvenience legitimate customers, and that DRM helps big business stifle innovation and competition. Furthermore, works can become permanently inaccessible if the DRM scheme changes or if the service is discontinued. :thumbsup_tone1: :thumbsdown: 
+In 1983, a very early implementation of Digital Rights Management (DRM) was the Software Service System (SSS) devised by the Japanese engineer Ryuichi Moriya. Today you DRM has expanded to traditional hardware products, from Keurig's coffeemakers, Philips' light bulbs, mobile device power chargers, and John Deere's tractors. You can find it applied in Computer Games by publishers like Electronic Arts, Ubisoft and The Sims3 and also in IBooks, Kindle etc which use DRM scheme of one or the other kind.  
 
-Irrespective of your view about the use of DRM if you are working in industries like entertainment and gaming which have been using DRM for a long you might still want to stick around to see what all the fuss it about and educate yourself. :nerd_face: 
+# why 
+Although use of DRM is not universally accepted. Proponents of DRM argue that it is necessary to prevent intellectual property from being copied freely, just as physical locks are needed to prevent personal property from being stolen, that it can help the copyright holder maintain artistic control, and that it can ensure continued revenue streams. Those opposed to DRM contend there is no evidence that DRM helps prevent copyright infringement, arguing instead that it serves only to inconvenience legitimate customers, and that DRM helps big business stifle innovation and competition. Furthermore, works can become permanently inaccessible if the DRM scheme changes or if the service is discontinued. 
 
-# when is it going to be ready (or state now):question: 
-The biggest hastle with DRM is the native support for differnet browsers on different devices. Check [this](https://drmtoday.com/platforms/) list to get an idea. So in order for you to provide your customers DRM service on most common browsers you will have to use more than one provider. A combination of Playread , Widevinew and Fairplay would cover for most part hence the term multi-DRM. :astonished: 
+Irrespective of your view about the use of DRM if you are working in industries like entertainment and gaming which have been using DRM for a long you might still want to stick around to see what all the fuss it about and educate yourself. 
 
-For more geeks pals out there check the state of [encrypted media extension here](https://caniuse.com/#search=drm) where you will also find some more resources , do check the html5rocks article by Sam Dutton.
+# State of DRM
+The biggest hastle with DRM is the native support for differnet browsers on different devices. Check [this](https://drmtoday.com/platforms/) list to get an idea. So in order for you to provide your customers DRM service on most common browsers you will have to use more than one provider. A combination of Playread , Widevinew and Fairplay would cover for most part hence the term multi-DRM. 
 
-who(service providers) and some history :question: 
+For more geeky pals out there check the state of [encrypted media extension here](https://caniuse.com/#search=drm) where you will also find some more resources , do check the html5rocks article by Sam Dutton.
+
+who(service providers) and some history 
 * Widevine (google)
 * Playready (microsoft)
 * Fairplay (apple)
 
-For this article we will focus on DASH first with widevine and playready. Fairplay uses HLS.
+For this article we will focus on DASH first with widevine and playready. Fairplay uses HLS. [Groups lobbying for DRM](http://www.info-mech.com/drm_policy.html#mpaa)
 
-# How :question: 
-Before moving forward skim through [this SO qs](https://stackoverflow.com/questions/822468/is-there-an-open-source-drm-solution) if you are wondering about open-source DRM solution. :crying_cat_face: 
+# How
+Before moving forward skim through [this Stackoverflow Question](https://stackoverflow.com/questions/822468/is-there-an-open-source-drm-solution) if you are wondering about open-source DRM solution. 
 
-To make our life easy we will use a multi-drm service . I recommedn ezdrm just for the level of support you will receive. It took me some time to figure out small details as not much material was available online hence quick support becomes very important in such cases. So for this article we will use ffmpeg, Bento4 and Jwplayer to get the job done you can also replace them with some alternatives after checking how the whole process works. :smile: 
+To make our life easy we will use [ezdrm](http://ezdrm.com) to help us with multi-drm. I recommend ezdrm because of the level of support you will receive. It took me some time to figure out small details as not much material was available online hence quick support becomes very important in such cases. 
 
-Please note if I have skipped creation of any portion. It should be covered in further detail by [this base article about cloud platform](http://aameer.github.io/cloud-computing-101/).
+As for this article we will use ffmpeg, Bento4 and Jwplayer to get the job done. You can also replace them with some alternatives after checking how the whole process works. So I would recommend to have some familarity with liraries like ffmpeg and bento4 before you move forward. DRM is a complex system with multiple moving parts so getting yourself familiar with ecosystem would go a long way.
 
-as mentioned in the base article ffmpeg can be used for various purposes. Here we will use it for say burning subtitles and creating four different versions for adaptive streaming. Command would be like:
+* For more details on ffmpeg please check this post about [creating a cloud computing platform from scratch](http://aameer.github.io/cloud-computing-101/) or [ffmpeg docs](ffmpeg.org).
+* For bento4 you can check [bento4 docs](http://bento4.com/).
 
-```bash
+Assuming familarized yourself with ffmpeg , you now know that ffmpeg can be used for various purposes. Here we will use it for say burning subtitles and creating four different versions for adaptive streaming.
 
-ffmpeg  -i input_file.mp4 -codec:v libx264 -x264opts "keyint=24:min-keyint=24:no-scenecut" -profile:v baseline -level 4.0 -vf "scale=-2:360,subtitles='/home/aameer/Documents/projects/subtitle/dynamic_subtitle_new.ass':force_style=FontName=/home/aameer/Documents/projects/font/Aaargh.ttf" output_360.mp4
+# Code
 
-ffmpeg  -i input_file.mp4 -codec:v libx264 -x264opts "keyint=24:min-keyint=24:no-scenecut" -profile:v baseline -level 4.0 -vf "scale=-2:480,subtitles='/home/aameer/Documents/projects/subtitle/dynamic_subtitle_new.ass':force_style=FontName=/home/aameer/Documents/projects/font/Aaargh.ttf" output_480.mp4
+{% highlight python linenos %}
 
-ffmpeg  -i input_file.mp4 -codec:v libx264 -x264opts "keyint=24:min-keyint=24:no-scenecut" -profile:v baseline -level 4.0 -vf "scale=-2:720,subtitles='/home/aameer/Documents/projects/subtitle/dynamic_subtitle_new.ass':force_style=FontName=/home/aameer/Documents/projects/font/Aaargh.ttf" output_720.mp4
+#fmpeg
 
-ffmpeg  -i input_file.mp4 -codec:v libx264 -x264opts "keyint=24:min-keyint=24:no-scenecut" -profile:v baseline -level 4.0 -vf "scale=-2:1080,subtitles='/home/aameer/Documents/projects/subtitle/dynamic_subtitle_new.ass':force_style=FontName=/home/aameer/Documents/projects/font/Aaargh.ttf" output_1080.mp4
+ffmpeg  -i input_file.mp4 -codec:v libx264 -x264opts "keyint=24:min-keyint=24:no-scenecut" -profile:v baseline -level 4.0 -vf "scale=-2:360,subtitles='/home/aameer/Documents/projects/subtitle/dynamic_subtitle_new.ass':force_style=FontName=/home/aameer/Documents/projects/font/Aaargh.ttf" ffmpeg_out_final/output_360.mp4
 
-```
+ffmpeg  -i input_file.mp4 -codec:v libx264 -x264opts "keyint=24:min-keyint=24:no-scenecut" -profile:v baseline -level 4.0 -vf "scale=-2:480,subtitles='/home/aameer/Documents/projects/subtitle/dynamic_subtitle_new.ass':force_style=FontName=/home/aameer/Documents/projects/font/Aaargh.ttf" ffmpeg_out_final/output_480.mp4
+
+ffmpeg  -i input_file.mp4 -codec:v libx264 -x264opts "keyint=24:min-keyint=24:no-scenecut" -profile:v baseline -level 4.0 -vf "scale=-2:720,subtitles='/home/aameer/Documents/projects/subtitle/dynamic_subtitle_new.ass':force_style=FontName=/home/aameer/Documents/projects/font/Aaargh.ttf" ffmpeg_out_final/output_720.mp4
+
+ffmpeg  -i input_file.mp4 -codec:v libx264 -x264opts "keyint=24:min-keyint=24:no-scenecut" -profile:v baseline -level 4.0 -vf "scale=-2:1080,subtitles='/home/aameer/Documents/projects/subtitle/dynamic_subtitle_new.ass':force_style=FontName=/home/aameer/Documents/projects/font/Aaargh.ttf"ffmpeg_out_final/output_1080.mp4
+
+{% endhighlight %}
 
 added `-codec:v libx264 -x264opts "keyint=24:min-keyint=24:no-scenecut"` in above command because of [this issue](https://github.com/axiomatic-systems/Bento4/issues/85)
 
@@ -62,24 +71,25 @@ for creation of `dynamic_subtitle_new.ass check` the base article. Now we have 4
 # Bento4 :
 > *Bento4 is a C++ class library and tools designed to read and write ISO-MP4 files. This format is defined in international specifications ISO/IEC 14496-12, 14496-14 and 14496-15. The format is a derivative of the Apple Quicktime file format, so Bento4 can be used to read and write most Quicktime files as well. Visit www.bento4.com for details.* 
 
-you can get the binaries [here](https://www.bento4.com/downloads/). Note you will have to use python2.7 for this. I was planing to update it for python3 but was advised againt by **Gilles Boccon** (creator of bento4) in the interest of time. 
+you can get the binaries [here](https://www.bento4.com/downloads/). Note you will have to use python2.7 for this. I was planing to update it for python3 but was advised againt by **Gilles Boccon** (creator of bento4) in the interest of time. Thanks for that tip Gilles. 
 
 Now using bento4 we will fragment the output videos which we got from ffmpeg , command would be like 
 
-```bash
+{% highlight python linenos %}
 
-bin/mp4fragment ffmpeg_ouput/output_360.mp4 fragmented_output/frag_360.mp4
-bin/mp4fragment ffmpeg_ouput/output_480.mp4 fragmented_output/frag_480.mp4
-bin/mp4fragment ffmpeg_ouput/output_720.mp4 fragmented_output/frag_720.mp4
-bin/mp4fragment ffmpeg_ouput/output_1080.mp4 fragmented_output/frag_1080.mp4
+bin/mp4fragment ffmpeg_out_final/output_360.mp4 fragmented_output_final/frag_360.mp4
+bin/mp4fragment ffmpeg_out_final/output_480.mp4 fragmented_output_final/frag_480.mp4
+bin/mp4fragment ffmpeg_out_final/output_720.mp4 fragmented_output_final/frag_720.mp4
+bin/mp4fragment ffmpeg_out_final/output_1080.mp4 fragmented_output_final/frag_1080.mp4
 
-```
+{% endhighlight %}
 
 more about [mp4fragment](https://www.bento4.com/documentation/mp4fragment/)
 
-now I am assuming by now you have got access to http://www.ezdrm.com/. Once you have that you can use this python code to get parse values from xml response.
+now I am assuming by now you have got access to [ezdrm](http://www.ezdrm.com/). Once you have that you can use this python code to get parse values from xml response. You can skip this portion if you already have figured figured about a way to get all the values which we will need from widevine, playready and fairplay. Moreover you might also want to save these values somewhere for future reference.
 
-```python
+{% highlight python linenos %}
+
 def get_ezdrm_values(content_id=None):
     """
     Returns Ezdrm values if content_id supplied or creates new ones.
@@ -107,70 +117,114 @@ def get_ezdrm_values(content_id=None):
     ezdrm_data["Checksum"]= tree.findall('.//PlayReady')[0].find('Checksum').text
     return ezdrm_data
 
-```
+{% endhighlight %}
 
-ideally this should have be fine but I faced and issue from bento4
+# Streams
+Now to do multi-drm we have to create two streams
+* DASH : which works with Widevine and Playready more [here](https://www.bento4.com/developers/dash/encryption-and-drm/).
+* HLS  : which works with Fairplay more [here](https://www.bento4.com/developers/hls/).
 
-    Note: When I was using 'KeyIDHEX': 'cf5faXXX-XXd0-5XXa-bXX8-9de2eaXXX25' . I was getting error ERROR: Invalid argument format for --encryption-key option
+Ideally values from ezdrm should have be fine but I faced and issue from bento4 while creating DASH stream 
+
+    Note: When I was using 'KeyIDHEX': '4d51279b-8886-51b2-a15f-ac8ddd0fe046'. I was getting error ERROR: Invalid argument format for --encryption-key option
     I checked the code and it was failing at line number 1043 (latest on github: https://github.com/axiomatic-systems/Bento4/blob/master/Source/Python/utils/mp4-dash.py#L1083) i.e
+
+{% highlight python linenos %}
 
     1042             if len(kid_hex) != 32:
     1043                 raise Exception('Invalid argument format for --encryption-key option')
 
-    so I changed the 'KeyIDHEX':'cf5faXXXXXd05XXabXX89de2eaXXX25' by removing the dashes and I was able to proceed ahead.
+{% endhighlight %}
 
-
+    so I changed the 'KeyIDHEX':'4d51279b888651b2a15fac8ddd0fe046' by removing the dashes and I was able to proceed ahead.
 
 then used this command (please replace the the corresponding vales as you obtain from the above mentioned python function:
 
-```bash
+# Dummy DRM values For Fairplay:
+{% highlight python linenos %}
+{'AssetID': '24d016eb-dcee-4197-be2f-f5b062f5c3b5', 'LicensesUrl': 'http://fps.ezdrm.com/api/licenses', 'KeyID': 'i71VddYtmfTF0I8ervjso5tfxLAjaUbL7KSIjvRGmBw=', 'KeyHex': '8BBD5575D62D99F4C5D08F1EAEF8ECA39B5FC4B0236946CBECA4888EF446981C', 'KeyUri': 'skd://fps.ezdrm.com/;24d016eb-dcee-4197-be2f-f5b062f5c3b5', 'SupportedFPSVersions': '1'}
 
-bin/mp4dash --encryption-key=KEYIDHEX:KEYHEX --playready-header=LA_URL:LAURL --widevine-header=#SERVERURL fragmented_output/frag_360.mp4 fragmented_output/frag_480.mp4 fragmented_output/frag_720.mp4 fragmented_output/frag_1080.mp4 --output-dir="outputfiles" --mpd-name="final_stream.mpd"
+{% endhighlight %}
 
-```
+# Dummy DRM values for Widevine and Playready:
+{% highlight python linenos %}
 
-now you should have a folder `outputfiles` and which would have `final_stream.mpd` and other related video and audio files. You can host them on s3 now and serve them with **cloudfront**. Once you do that you can use **Jwplayer** to test your strem
+{'KeyIDGUID': 'TVEnm4iGUbKhX6yN3Q/gRg==', 'Key': 'EJVl27J9nSb2vW+cadivsw==', 'PSSH': 'EhBNUSebiIZRsqFfrI3dD+BGGghtb3ZpZG9uZSIQBbN1Nh3nR0yYxl24xwDiwUjj3JWbBg==', 'ContentID': 'BbN1Nh3nR0yYxl24xwDiwQ==', 'LAURL': 'https://playready.ezdrm.com/cency/preauth.aspx?pX=6BDD75', 'KeyID': 'TVEnm4iGUbKhX6yN3Q/gRg==', 'KeyIDHEX': '4d51279b-8886-51b2-a15f-ac8ddd0fe046', 'ServerGet': 'request={"policy": "", "tracks": [ {"type": "SD"}], "content_id": "BbN1Nh3nR0yYxl24xwDiwQ=="}', 'Checksum': '/yYhM78wfEg=', 'ServerURL': 'https://widevine-dash.ezdrm.com/proxy?pX=5E6ACA', 'KeyHEX': '109565dbb27d9d26f6bd6f9c69d8afb3', 'ResponseRaw': '{"status":"OK","drm":[{"type":"WIDEVINE","system_id":"edef8ba979d64acea3c827dcd51d21ed"}],"tracks":[{"type":"SD","key_id":"TVEnm4iGUbKhX6yN3Q/gRg==","key":"EJVl27J9nSb2vW+cadivsw==","pssh":[{"drm_type":"WIDEVINE","data":"EhBNUSebiIZRsqFfrI3dD+BGGghtb3ZpZG9uZSIQBbN1Nh3nR0yYxl24xwDiwUjj3JWbBg=="}]}]}'}
 
-:alembic:   
-goto : https://developer.jwplayer.com/tools/stream-tester/
-replace : file url with your url to your final_stream.mpd
-and click widevine on chrome and playready on ie/edge and then paste corresponding values which you got from ezdrm in the function above
+{% endhighlight %}
 
-and then hit play. At this stage your stream must work and your video must get a license to be played. Also this stream will be adaptive.
 
-To add hls to the workflow we just need to add one more command along with creation of DASH , More [here](https://www.bento4.com/developers/dash/encryption-and-drm/). We would also create HLS stream and hence Fairplay would also be covered more [here](https://www.bento4.com/developers/hls/)
+{% highlight python linenos %}
+#using bento for dash
+bin/mp4dash --encryption-key=4d51279b888651b2a15fac8ddd0fe046:109565dbb27d9d26f6bd6f9c69d8afb3 --playready-header=LA_URL:https://playready.ezdrm.com/cency/preauth.aspx?pX=6BDD75 --widevine-header=#EhBNUSebiIZRsqFfrI3dD+BGGghtb3ZpZG9uZSIQBbN1Nh3nR0yYxl24xwDiwUjj3JWbBg== fragmented_output_final/frag_360.mp4 fragmented_output_final/frag_480.mp4 fragmented_output_final/frag_720.mp4 fragmented_output_final/frag_1080.mp4 --output-dir="dash_drm_output" --mpd-name="final_master.mpd"
 
+#using bento for hls 
+./bin/mp4hls --output-single-file fragmented_output_final/frag_360.mp4 fragmented_output_final/frag_480.mp4 fragmented_output_final/frag_720.mp4 fragmented_output_final/frag_1080.mp4 --output-dir="hls_drm_output" --master-playlist-name="final_stream.m3u8" --output-single-file --encryption-mode=SAMPLE-AES --encryption-key=8BBD5575D62D99F4C5D08F1EAEF8ECA39B5FC4B0236946CBECA4888EF446981C --encryption-iv-mode=fps --encryption-key-format=com.apple.streamingkeydelivery --encryption-key-uri="skd://fps.ezdrm.com/;24d016eb-dcee-4197-be2f-f5b062f5c3b5" 
+
+{% endhighlight %}
+
+*notice the commas around --encryption-key-uri they are intensional* again this is to avoid a bento4 issue which doesn't add keys properly to stream and hence stream doesn't work.
+
+now you should have a folder `dash_drm_output` and `hls_drm_output` which would have `final_stream.mpd` and `final_stream.m3u8` respectively in addition to some other files. You can host them on s3 now and serve them with **cloudfront**. Once you do that you can use **Jwplayer** to test your strem
+
+Once you have hosted them you need a DRM enabled player to play it. In this case we used Jwplayer. Since it is DRM usual setup wont work for fairplay with ezdrm so we have to add some additional code to make it work which I am mentioning as under:
+
+{% highlight javascript linenos %}
+
+  //added these function from frontend for fairplay to work:
+  extractContentId: function(initDataUri) {
+    var uriParts = initDataUri.split('://', 1);
+    var protocol = uriParts[0].slice(-3);
+    uriParts = initDataUri.split(';', 2);
+    var contentId = uriParts.length > 1 ? uriParts[1] : '';
+    return protocol.toLowerCase() == 'skd' ? contentId : '';
+  },
+  licenseRequestMessage: function(message) {
+    return new Blob([message], {type: 'application/octet-binary'});
+  },
+  extractKey: function(response) {
+    return new Promise(function(resolve, reject) {
+      var reader = new FileReader();
+      reader.addEventListener('loadend', function() {
+        resolve(new Uint8Array(reader.result));
+      });
+      reader.addEventListener('error', function() {
+        reject(reader.error);
+      });
+      reader.readAsArrayBuffer(response);
+    });
+  }
+
+{% endhighlight %}
 
 Special thanks to Ezdrm guys especially to  **David Eisenbacher (founder ezdrm)** and **Gilles Boccon-Gibod (cretor of Bento4)** for the help. 
 
-Some important links which were helpful in this course :
+
+I havent tested this but in some cases you may need to run the below mentioned command for ffmpeg to work as mentioned in this article 
+`sudo apt-get install libavcodec-extra-54`
+
+Note for building ffmpeg which I have used check my stackoverflow [here] (https://stackoverflow.com/questions/35597083/how-to-build-ffmpeg-with-burn-text-on-hls-output-while-maintaining-the-aspect-ra)
+
+Few things to Keep in mind. ezdrm and Jwplayer used here are paid services. Also you might need to have apple developer registration to get FPS deployment package which is again a paid service and if you/your company doesnt have an apple developer account you will need to get DUNS number first to apply for one. For more information on DUNS check [this](https://en.wikipedia.org/wiki/Data_Universal_Numbering_System).
+
+One more thing to notice is this setup doesnt cover IOS as fariplay supports IOS with only IOS sdk which is not covered here.
+
+If you dont want to deal with all this complexity then you can also use services like [bitmovin](http://bitmovin.com/) where they will take care of everything for you. You just need to supply values and receive output streams.
+
+Since this is a very complex system there is a chance I may have missed some details in that case please get in touch. There is lot more to DRM that just this but hope this post was worth your time and gave you a picture of DRM.
+
+Thanks for your time.
+
+# Credits
+I also would like to give credit to people especially **David Eisenbacher** (CEO and Co-Founder, EZDRM Inc) and others from ezdrm, I want to thank **Dave Otten** (CEO jwplayer) and others from Jwplayer for the help. Last but not least I would also like to convey my regards to **Gilles Boccon-Gibod** (creator of bento4 for his time and effort).
+
+Some important links which were helpful in this course
+
 * http://www.ezdrm.com/
 * https://ffmpeg.org/
 * https://github.com/axiomatic-systems/Bento4
 * https://drmtoday.com/platforms/
 * https://tdngan.wordpress.com/2016/11/17/how-to-encode-multi-bitrate-videos-in-mpeg-dash-for-mse-based-media-players/
 * https://trac.ffmpeg.org/wiki/Encode/H.264
-
-not sure if necessary but keeping it as I remember adding this
-`sudo apt-get install libavcodec-extra-54`
-
-https://stackoverflow.com/questions/9764740/unknown-encoder-libx264/10027588#10027588
-https://superuser.com/questions/908280/what-is-the-correct-way-to-fix-keyframes-in-ffmpeg-for-dash/1098329#1098329
-
-With jwplayer I faced issue with edge and had reported to them so you can use https://bitmovin.com/mpeg-dash-hls-drm-test-player/ instead to test your steams incase they dont work on edge
-
-Note for building ffmpeg which I have used check my stackoverflow [here] (https://stackoverflow.com/questions/35597083/how-to-build-ffmpeg-with-burn-text-on-hls-output-while-maintaining-the-aspect-ra)
-
-
-sample :telescope:   
-https://dyinlm8q22u8a.cloudfront.net/482/video/628/648/output/master_482_648.mpd
-widevine: https://widevine-dash.ezdrm.com/proxy?pX=5E6ACA
-playready: https://playready.ezdrm.com/cency/preauth.aspx?pX=6BDD75
-
-sample ezdrm values :key: 
-
-```python
-
-{'ResponseRaw': '{"status":"OK","drm":[{"type":"WIDEVINE","system_id":"edef8ba979d64acea3c827dcd51d21ed"}],"tracks":[{"type":"SD","key_id":"z1+vdTzQX2qzGJ3i6iqVJQ==","key":"+lFeMZptOWNK9oPhm2IhSQ==","pssh":[{"drm_type":"WIDEVINE","data":"EhDPX691PNBfarMYneLqKpUlGghtb3ZpZG9uZSIQWWgkeECVN0KZcSWWiIhon0jj3JWbBg=="}]}]}', 'KeyIDGUID': 'z1+vdTzQX2qzGJ3i6iqVJQ==', 'KeyID': 'z1+vdTzQX2qzGJ3i6iqVJQ==', 'KeyHEX': 'fa515e319a6d39634af683e19b622149', 'PSSH': 'EhDPX691PNBfarMYneLqKpUlGghtb3ZpZG9uZSIQWWgkeECVN0KZcSWWiIhon0jj3JWbBg==', 'Checksum': '4xv5IGn1Xyk=', 'ServerURL': 'https://widevine-dash.ezdrm.com/proxy?pX=5E6ACA', 'Key': '+lFeMZptOWNK9oPhm2IhSQ==', 'LAURL': 'https://playready.ezdrm.com/cency/preauth.aspx?pX=6BDD75', 'ServerGet': 'request={"policy": "", "tracks": [ {"type": "SD"}], "content_id": "WWgkeECVN0KZcSWWiIhonw=="}', 'ContentID': 'WWgkeECVN0KZcSWWiIhonw==', 'KeyIDHEX': 'cf5faf75-3cd0-5f6a-b318-9de2ea2a9525'}
-
-```
+* https://stackoverflow.com/questions/9764740/unknown-encoder-libx264/10027588#10027588
+* https://superuser.com/questions/908280/what-is-the-correct-way-to-fix-keyframes-in-ffmpeg-for-dash/1098329#1098329
