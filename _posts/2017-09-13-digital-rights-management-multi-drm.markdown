@@ -17,15 +17,15 @@ date: 2017-09-13T20:43:41+05:30
 # History 
 Remember product key (A typically alphanumerical serial number used to represent a license to a particular piece of software), it is one of the oldest and least complicated DRM protection methods for the computer games. 
 
-In 1983, a very early implementation of Digital Rights Management (DRM) was the Software Service System (SSS) devised by the Japanese engineer Ryuichi Moriya. Today DRM has expanded to traditional hardware products, from Keurig's coffeemakers, Philips' light bulbs, mobile device power chargers, and John Deere's tractors. You can find it applied in Computer Games by publishers like Electronic Arts, Ubisoft and The Sims3 and also in IBooks, Kindle etc which use DRM scheme of one or the other kind.  
+In 1983, a very early implementation of Digital Rights Management (DRM) was the Software Service System (SSS) devised by the Japanese engineer Ryuichi Moriya. Today DRM has expanded to traditional hardware products, from John Deere's tractors, Philips' light bulbs and mobile device power chargers. You can find it applied in Computer Games by publishers like Electronic Arts, Ubisoft and The Sims3 and also in IBooks, Kindle etc which use DRM scheme of one or the other kind.  
 
 # why 
-Although use of DRM is not universally accepted. Proponents of DRM argue that it is necessary to prevent intellectual property from being copied freely, just as physical locks are needed to prevent personal property from being stolen, that it can help the copyright holder maintain artistic control, and that it can ensure continued revenue streams. Those opposed to DRM contend there is no evidence that DRM helps prevent copyright infringement, arguing instead that it serves only to inconvenience legitimate customers, and that DRM helps big business stifle innovation and competition. Furthermore, works can become permanently inaccessible if the DRM scheme changes or if the service is discontinued. 
+Although, use of DRM is not universally accepted. Proponents of DRM argue that it is necessary to prevent intellectual property from being copied freely, just as physical locks are needed to prevent personal property from being stolen, that it can help the copyright holder maintain artistic control, and that it can ensure continued revenue streams. Those opposed to DRM contend there is no evidence that DRM helps prevent copyright infringement, arguing instead that it serves only to inconvenience legitimate customers, and that DRM helps big business stifle innovation and competition. Furthermore, works can become permanently inaccessible if the DRM scheme changes or if the service is discontinued. 
 
 Irrespective of your view about the use of DRM if you are working in industries like entertainment and gaming which have been using DRM for a long you might still want to stick around to see what all the fuss it about and educate yourself. 
 
 # State of DRM
-The biggest hastle with DRM is the native support for differnet browsers on different devices. Check [this](https://drmtoday.com/platforms/) list to get an idea. So in order for you to provide your customers DRM service on most common browsers you will have to use more than one provider. A combination of Playread , Widevinew and Fairplay would cover for most part hence the term multi-DRM. 
+The biggest hastle with DRM is the native support for different browsers on different devices. Check [this](https://drmtoday.com/platforms/) list to get an idea. So in order for you to provide your customers DRM service on most common browsers you will have to use more than one provider. A combination of Playread , Widevinew and Fairplay would cover for most part hence the term multi-DRM. 
 
 For more geeky pals out there check the state of [encrypted media extension here](https://caniuse.com/#search=drm) where you will also find some more resources , do check the html5rocks article by Sam Dutton.
 
@@ -41,7 +41,7 @@ Before moving forward skim through [this Stackoverflow Question](https://stackov
 
 To make our life easy we will use [ezdrm](http://ezdrm.com) to help us with multi-drm. I recommend ezdrm because of the level of support you will receive. It took me some time to figure out small details as not much material was available online hence quick support becomes very important in such cases. 
 
-As for this article we will use ffmpeg, Bento4 and Jwplayer to get the job done. You can also replace them with some alternatives after checking how the whole process works. So I would recommend to have some familarity with liraries like ffmpeg and bento4 before you move forward. DRM is a complex system with multiple moving parts so getting yourself familiar with ecosystem would go a long way.
+As for this article we will use ffmpeg, Bento4 and Jwplayer to get the job done. You can also replace them with some alternatives after checking how the whole process works. So I would recommend to have some familarity with libraries like ffmpeg and bento4 before you move forward. DRM is a complex system with multiple moving parts so getting yourself familiar with ecosystem would go a long way.
 
 * For more details on ffmpeg please check this post about [creating a cloud computing platform from scratch](http://aameer.github.io/cloud-computing-101/) or [ffmpeg docs](ffmpeg.org).
 * For bento4 you can check [bento4 docs](http://bento4.com/).
