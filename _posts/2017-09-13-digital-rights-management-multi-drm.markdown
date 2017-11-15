@@ -7,7 +7,7 @@ tags: [DRM, multi-DRM, Playready, Widevine, Fairplay, Secure Adaptive Streaming,
 title: "Digital Rights Management (multi - drm)"
 comments: true
 share: true
-date: 2017-11-16T20:43:41+05:30
+date: 2017-11-15T20:43:41+05:30
 ---
 
 # what
