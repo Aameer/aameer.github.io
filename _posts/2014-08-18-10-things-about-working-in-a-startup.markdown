@@ -19,7 +19,7 @@ It has been almost  a year since I joined a tech startup.Startup for different p
 ### Entrepreneurship
 *In a startup*, you will learn how a buisness works.You will network with future collaborators most of them are intelligently crazy people *(you have to be crazy to start a startup at the first place)*. As you will work closely with an entrepreneur.You will learn how to build a company and/or product, for someone who wants to start one of his/her own it can be of great importance as *Entrepreneurship is not taught, but it can be learned*.On top of that you will be forced to try new things.
 
-### Rapidly Adoption
+### Rapid Adoption
 *In a startup* things change instantly.As a startup environment is chaotic and volatile and one needs to adapt rapidly.Every day is hard yet differernt from one another.Your job description and/or designation changes faster then you expect it to be.
 
 > Steve blank, a professor at Stanford and founder of several companies asks those intrested in joining a startup 'How comfortable are you with chaos?'.

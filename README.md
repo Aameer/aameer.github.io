@@ -152,13 +152,15 @@ If you'd like to give me credit somewhere on your blog or tweet a shout out to [
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/mmistakes/so-simple-theme/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
-creating new post `octopress new post <post_name>`
-install:
-    ruby `sudo apt-get install rubygems ruby-dev`
-    bundler 
-        `sudo apt  install ruby-bundler`
-        `sudo apt-get install rubygems ruby-dev`
-    jekyll `gem install bundler jekyll`
-test `bundle exec jekyll serve`
-`bundle install`
-`jekyll serve`
+## creating new post 
+- old way`octopress new post <post_name>`
+- new way https://jekyllrb.com/docs/posts/
+## install(ubuntu):
+    - ruby `sudo apt-get install rubygems ruby-dev`
+    - bundler 
+        - `sudo apt  install ruby-bundler`
+        - `sudo apt-get install rubygems ruby-dev`
+    - jekyll `gem install bundler jekyll`
+- test `bundle exec jekyll serve`
+- `bundle install`
+- `jekyll serve`

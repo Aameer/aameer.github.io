@@ -7,6 +7,7 @@ search:           true
 # You don't need to specify the protocol if you want it available on http and https. Example: //localhost:4000
 url:              https://aameer.github.io
 domain_name:	  aameer.github.io
+theme: jekyll-theme-so-simple 
 
 # Owner/author information
 owner:
@@ -17,7 +18,7 @@ owner:
   #twitter:		AameerRafiqWani	
   #facebook:		aameerrafiq	
   github:		Aameer
-  stackexchange:	http://stackoverflow.com/users/2833695/aameer
+  stackexchange:	https://stackoverflow.com/users/2833695/aameer
   linkedin:		aameerwani
   #instagram:    aameer_rafiq
   flickr:
