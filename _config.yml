@@ -5,7 +5,7 @@ disqus_shortname: aameergithubio
 search:           true
 # Change url to your domain. Leave localhost server or blank when working locally.
 # You don't need to specify the protocol if you want it available on http and https. Example: //localhost:4000
-url:              http://aameer.github.io
+url:              https://aameer.github.io
 domain_name:	  aameer.github.io
 
 # Owner/author information
@@ -14,12 +14,12 @@ owner:
   avatar:         bio-photo.jpg
   email:          aameer.rafiq@gmail.com
   # Social networking links used in footer. Update and remove as you like.
-  twitter:		AameerRafiqWani	
-  facebook:		aameerrafiq	
+  #twitter:		AameerRafiqWani	
+  #facebook:		aameerrafiq	
   github:		Aameer
   stackexchange:	http://stackoverflow.com/users/2833695/aameer
   linkedin:		aameerwani
-  instagram:    aameer_rafiq
+  #instagram:    aameer_rafiq
   flickr:
   tumblr:
   # For Google Authorship https://plus.google.com/authorship
