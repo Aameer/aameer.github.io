@@ -12,12 +12,12 @@ Looking for a simple, responsive, theme for your Jekyll powered blog? Well look 
 * Disqus comments if you choose to enable.
 * Tags for [Open Graph](https://developers.facebook.com/docs/opengraph/) and [Twitter Cards](https://dev.twitter.com/docs/cards) for a better social sharing experience.
 * Vanilla [custom 404 page]({{ site.url }}/404.html) to get you started.
-* Stylesheets for Pygments and Coderay [syntax highlighting](http://mmistakes.github.io/articles/so-simple-theme/code-highlighting-post/) to make your code examples look snazzy.
+* Stylesheets for Pygments and Coderay [syntax highlighting](https://mmistakes.github.io/articles/so-simple-theme/code-highlighting-post/) to make your code examples look snazzy.
 * Simple search that overlays results based on post title.
 * Grunt build script for easier theme development.
 * [Sitemap](https://github.com/mmistakes/so-simple-theme/blob/master/sitemap.xml) for search engines
 
-![screenshot of So Simple Theme](http://mmistakes.github.io/so-simple-theme/images/so-simple-theme-preview.jpg)
+![screenshot of So Simple Theme](https://mmistakes.github.io/so-simple-theme/images/so-simple-theme-preview.jpg)
 
 General notes and suggestions for customizing So Simple Theme.
 
@@ -25,14 +25,14 @@ General notes and suggestions for customizing So Simple Theme.
 
 ## Basic Setup for new Jekyll site
 
-1. [Install Bundler](http://bundler.io) `gem install bundler` and then install [Jekyll](http://jekyllrb.com) and all dependencies `bundle install`.
+1. [Install Bundler](https://bundler.io) `gem install bundler` and then install [Jekyll](https://jekyllrb.com) and all dependencies `bundle install`.
 2. Fork the [So Simple Theme repo](https://github.com/mmistakes/so-simple-theme/fork).
 3. Clone the repo you just forked and rename it.
 4. Edit `_config.yml` to personalize your site.
 5. Check out the sample posts in `_posts` to see examples for pulling in large feature images, assigning categories and tags, and other YAML data.
 6. Read the documentation below for further customization pointers and documentation.
 
-[Demo the Theme](http://mmistakes.github.io/so-simple-theme/)
+[Demo the Theme](https//mmistakes.github.io/so-simple-theme/)
 
 **Pro-tip:** Remove the sample posts in `_posts` and the `gh-pages` branch after cloning. There is a bunch of garbage in the `gh-pages` branch used for the theme's demo site.
 
@@ -68,7 +68,7 @@ owner:
   instagram:
   tumblr:
   # For Google Authorship https://plus.google.com/authorship
-  google_plus:    "http://plus.google.com/123123123123132123"
+  google_plus:    "https://plus.google.com/123123123123132123"
 
 # Analytics and webmaster tools stuff goes here
 google_analytics:
@@ -84,10 +84,10 @@ links:
   - title: Articles
     url: /articles
   - title: Google
-    url: http://google.com
+    url: https://google.com
     external: true
 
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+# https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/New_York
 pygments:    true
 markdown:    kramdown
@@ -133,13 +133,13 @@ so-simple-theme/
 
 ## Customization
 
-For full customization details and more information on the theme check out the [So Simple theme setup guide](http://mmistakes.github.io/so-simple-theme/theme-setup/).
+For full customization details and more information on the theme check out the [So Simple theme setup guide](https://mmistakes.github.io/so-simple-theme/theme-setup/).
 
 ---
 
 ## Questions?
 
-Having a problem getting something to work or want to know why I setup something in a certain way? Ping me on Twitter [@mmistakes](http://twitter.com/mmistakes) or [file a GitHub Issue](https://github.com/mmistakes/so-simple-theme/issues/new).
+Having a problem getting something to work or want to know why I setup something in a certain way? Ping me on Twitter [@mmistakes](https://twitter.com/mmistakes) or [file a GitHub Issue](https://github.com/mmistakes/so-simple-theme/issues/new).
 
 ---
 
@@ -153,7 +153,7 @@ If you'd like to give me credit somewhere on your blog or tweet a shout out to [
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/mmistakes/so-simple-theme/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
 ## creating new post 
-- old way`octopress new post <post_name>`
+- old way `octopress new post <post_name>`
 - new way https://jekyllrb.com/docs/posts/
 ## install(ubuntu):
     - ruby `sudo apt-get install rubygems ruby-dev`
@@ -164,3 +164,5 @@ If you'd like to give me credit somewhere on your blog or tweet a shout out to [
 - test `bundle exec jekyll serve`
 - `bundle install`
 - `jekyll serve`
+# serve 
+- `undle exec jekyll serve --livereload`
